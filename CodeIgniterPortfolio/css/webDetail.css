@@ -1,0 +1,363 @@
+* {
+margin: 0;
+padding: 0;
+outline: none;
+}
+body{
+line-height: 1.35em;
+background:url('../img/brillantpattern.png');
+}
+
+#wrapper{
+width:960px;
+margin-left: auto;
+margin-right: auto;
+float: none;
+}
+/*_______________________ CONTACT  _________________ */
+
+#contact{
+height:220px;
+background-color:#937EBF ;
+
+}
+
+#headContact{
+float: left;
+margin-left:230px;
+margin-right:20px;
+margin-top: 80px;
+}
+#titlesContact{
+float: left;
+width: 280px;
+margin-top: 50px;
+}
+
+#titlesContact input
+{
+margin-bottom: 10px;
+padding-left: 10px;
+}
+
+#messageContact{
+float: left;
+margin-top: 50px;
+margin-left: 20px;
+width: 300px;
+}
+
+#messageContact input{
+padding-bottom:90px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+border: 2px solid white;
+width: 280px;
+float: left;
+padding-left: 10px;
+padding-top: 5px;
+
+}
+
+#sendBtn{
+float: left;
+margin-left: 48px;
+margin-top: 10px;
+padding-left:85px;
+padding-bottom: 2px;
+padding-top: 4px;
+padding-right:85px;
+cursor: pointer;
+}
+
+
+
+.inputStyle{
+border: 2px solid white;
+width: 280px;
+height: 30px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+}
+
+.sendBtnStyle{
+border: 2px solid white;
+-moz-border-radius: 2px;
+border-radius: 2px;
+background-color: #AFC6F9;
+}
+.inputColor{
+background-color:#E8E8E8 ;
+}
+
+.inputColorHighLight{
+background-color:white ;
+}
+
+
+/*_______________________ HEADER ____________________ */
+#header{
+float: left;
+}
+
+#homeReturn{
+border-bottom:10px solid #AA2D48;
+margin-top: 15px;
+width: 340px;
+float: left;
+margin-right:18px;
+}
+
+#navHolder{
+float: left;
+height: 50px;
+}
+
+#nav li{
+float: left;
+padding-top:4px ;
+}
+
+#nav{
+margin-left: 240px;
+}
+
+
+.navWork{
+background-color:#AA2D48;
+padding:6px 18px;
+-moz-border-radius: 1px;
+border-radius: 1px;
+}
+
+.navPers{
+background-color:#EBBB4C;
+padding:6px 18px;
+-moz-border-radius: 1px;
+border-radius: 1px;
+margin-left: 20px;
+margin-right: 20px;
+}
+
+
+.navCont{
+background-color:#937EBF;
+padding:6px 18px;
+-moz-border-radius:1px;
+border-radius:1px;
+}
+
+.bott{
+padding-bottom: 12px;
+border-bottom: 12px solid #AA2D48;
+}
+
+.navPers:hover{
+color: ;
+}
+
+.navCont:hover{
+color: ;
+}
+
+
+/*_______________________ PROJECT NAME ____________________ */
+#projectName{
+width:330px;
+margin-top: 20px;
+border-right:10px solid #AA2D48;
+min-height:318px; 
+float: left;
+}
+
+#finalScreens{
+width: 240px;
+margin-left: 60px;
+}
+#finalScreens ul li{
+float: left;
+margin-top: 20px;
+}
+
+#finalScreens ul li:nth-child(even){
+margin-left:20px;
+}
+
+/*_______________________ PROJECT DETAILS _________________ */
+
+#projectDetails{
+float: left;
+width: 580px;
+height:315px;
+margin-top: 20px;
+margin-left: 20px;
+}
+
+#projectDetails p:nth-child(odd){
+margin-top:10px ;
+}
+#projectDetails p:nth-child(even){
+margin-top:10px ;
+}
+
+#transDetail{
+background-color: black;
+filter:alpha(opacity=10);
+-moz-opacity: 0.1;
+opacity: 0.1;
+width:inherit;
+height: inherit;
+position:absolute;
+z-index:-9;
+}
+
+/*_______________________ TECHNOLOGY USED ____________________ */
+#technologyUsed{
+float: left;
+clear: both;
+width: 330px;
+min-height: 430px;
+margin-top: 70px;
+margin-bottom: 70px;
+border-right:10px solid #AA2D48;
+}
+
+#techDetailLogo ul li{
+float: left;
+margin-bottom: 10px;
+}
+
+#detailLogos li:nth-child(odd){
+margin-left: 40px;
+}
+
+#detailLogos li:nth-child(even){
+margin-left: 40px;
+}
+/*_______________________ PRODUCTION SCREENS ____________________ */
+
+#productionScreens{
+float: left;
+margin-left:20px;
+margin-top: 70px;
+width: 580px;
+height: 420px;
+}
+
+#productionScrHolder ul li{
+float: left;
+margin-top: 30px;
+}
+
+#productionScrHolder ul li:nth-child(odd){
+margin-left: 80px;
+margin-bottom:50px;
+}
+#productionScrHolder ul li:nth-child(even){
+margin-left: 140px;
+margin-bottom:50px;
+}
+
+/*_______________________ FOOTER  _________________ */
+#footer{
+clear: both;
+
+}
+#footTop{
+border-top:5px solid #AFAEAE;
+opacity:.5;
+}
+/*_______________________ FONTS __________________ */
+
+@font-face{
+font-family:openSansSemi;
+src: url("../fonts/OpenSans-Semibold.ttf");
+}
+
+@font-face{
+font-family:openSansBld;
+src: url("../fonts/OpenSans-Bold.ttf");
+}
+
+@font-face{
+font-family:nevisBld;
+src: url("../fonts/nevis.ttf");
+}
+
+.nameFnt{
+font: bold 18px Arial;
+color: #282828;
+}
+
+.navFnt{
+font:bold 16px helvetica;
+color: #282828;
+}
+
+.projectFnt{
+font: bold 32px arial;
+color: black;
+letter-spacing: 1px;
+}
+
+.threeCoresFnt{
+font: bold 18px helvetica;
+color: black;
+}
+
+.describeFnt{
+font: 14px helvetica;
+color: black;
+}
+
+.headDetailFnt{
+font: bold 22px openSansBld;
+color: black;
+letter-spacing: 1px;
+margin-bottom: 30px;
+}
+
+.footFnt{
+font: 14px openSansSemi;
+color: #282828;
+letter-spacing: 1px;
+}
+
+.contactHeadFnt{
+font:bold 21px Myriad Pro;
+border-bottom:10px solid white;
+letter-spacing: 1px;
+}
+
+.inputFnt{
+font: 12px Myriad Pro;
+letter-spacing: 1px;
+color: #3A3A3A;
+}
+
+.inputFnt::-webkit-input-placeholder{
+color: #3A3A3A;
+}
+
+.sendBtnFnt{
+font: bold 22px Myriad Pro;
+letter-spacing: 1px;
+color: #3A3A3A;
+}
+
+/*_______________________ GENERALY USED ITEMS __________________ */
+.anc{
+text-decoration:none;
+}
+
+.txtInd{
+margin-left:10px;
+}
+
+.txtIndAgain{
+margin-left:20px;
+}
+
+.imgBlock{
+display: block;
+}
