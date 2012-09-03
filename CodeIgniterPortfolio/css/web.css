@@ -17,7 +17,7 @@ float: none;
 /*_______________________ CONTACT  _________________ */
 
 #contact{
-height:220px;
+height:240px;
 background-color:#937EBF ;
 
 }
@@ -151,6 +151,12 @@ border-radius:1px;
 padding-bottom: 12px;
 border-bottom: 12px solid #AA2D48;
 }
+
+.bottContact{
+padding-bottom: 12px;
+border-bottom: 12px solid #937EBF;
+}
+
 
 .navPers:hover{
 color: ;
@@ -394,6 +400,14 @@ text-decoration:none;
 
 .txtInd{
 margin-left:10px;
+}
+
+.contactHide{
+display: none;
+}
+
+.contactShow{
+display: block;
 }
 
 .txtIndAgain{

@@ -3,7 +3,7 @@ $(function(){
 	var myContact=$('#contact');
 	var nav=$('#nav li');
 	var contactBorder=$('#ancContact');
-	var workBorder=$('#ancWork');
+	var personalBorder=$('#ancPersonal');
 	
 $('.navCont').click(function(e){
 
@@ -17,7 +17,7 @@ $('.navCont').click(function(e){
 	else if(myContact.hasClass('contactShow'))
 	{
 		contactBorder.removeClass('bottContact');
-		workBorder.addClass('bott');
+		personalBorder.addClass('bott');
 		myContact.slideUp('slow').removeClass('contactShow').addClass('contactHide');	
 	}
 	

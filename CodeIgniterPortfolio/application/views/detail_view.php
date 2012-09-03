@@ -8,7 +8,7 @@
  		
 </head>
 	<body>
-	<div id="contact">
+	<div id="contact" class="contactHide">
 		<div id="headContact">
 			<p class="contactHeadFnt">Interested At Reaching Out To Me</p>
 		</div><!-- closed headContact -->
@@ -33,9 +33,9 @@
 				</div><!-- closed homeReturn -->
 				<div id="navHolder">
 					<ul id="nav">
-						<li class="bott"><?php echo anchor('home','My Work','class="anc navFnt navWork"') ?></li>
-						<li><?php echo anchor('personal','Personal','class="anc navFnt navPers"') ?></li>
-						<li><a class="anc navFnt navCont" href="">Contact</a></li>
+						<li id="ancWork" class="bott"><?php echo anchor('home','My Work','class="anc navFnt navWork"') ?></li>
+						<li id="ancPersonal"><?php echo anchor('personal','Personal','class="anc navFnt navPers"') ?></li>
+						<li id="ancContact"><a class="anc navFnt navCont" href="">Contact</a></li>
 					</ul>
 				</div><!-- closed navHolder -->
 			</div><!-- closed header -->

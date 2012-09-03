@@ -8,15 +8,35 @@
  		
 </head>
 	<body>
+	<div id="contact" class="contactHide">
+		<div id="headContact">
+			<p class="contactHeadFnt">Interested At Reaching Out To Me</p>
+		</div><!-- closed headContact -->
+		<div id="titlesContact">
+			<form action="" method="post">
+				<input class="inputStyle inputFnt inputColor" id="firstLast" type="text" name="firstLast" placeholder="Your First & Last Name"/>
+				<input class="inputStyle inputFnt inputColor" id="email" type="text" name="email" placeholder="Your Email"/>
+				<input class="inputStyle inputFnt inputColor" id="subject" type="text" name="subject" placeholder="Subject Title"/>
+			
+		</div><!-- closed titlesContact -->
+		<div id="messageContact">
+				<input class="inputFnt inputColor" id="subject" type="text" name="subject" placeholder="Place Message Here"/>
+
+				<button class="sendBtnFnt sendBtnStyle" id="sendBtn" type="submit">Send</button>
+			</form><!-- closed form -->
+		</div><!-- closed messageContact -->
+	</div><!-- closed contact -->
+	
+
 		<div id="wrapper">
 			<div id="header">
 				<div id="homeReturn"><p class="txtInd"><a class="anc nameFnt" href="">Andre Allen</br>Web Developer & Designer</a></p>
 				</div><!-- closed homeReturn -->
 				<div id="navHolder">
 					<ul id="nav">
-						<li><?php echo anchor('home','My Work','class="anc navFnt navWork"') ?></li>
-						<li class="bott"><a class="anc navFnt navPers" href="">Personal</a></li>
-						<li><a class="anc navFnt navCont" href="">Contact</a></li>
+						<li id="ancWork"><?php echo anchor('home','My Work','class="anc navFnt navWork"') ?></li>
+						<li id="ancPersonal" class="bott"><a class="anc navFnt navPers" href="">Personal</a></li>
+						<li id="ancContact"><a class="anc navFnt navCont" href="">Contact</a></li>
 					</ul>
 				</div><!-- closed navHolder -->
 			</div><!-- closed header -->
@@ -106,6 +126,6 @@ Code Igniter framework and OOP.</p>
 		</div><!-- closed wrapper -->
 	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
 	<script type="text/javascript" src="js/jquery.lightbox_me.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/mainPersonal.js"></script>
 	</body>
 </html>

@@ -17,7 +17,7 @@ float: none;
 /*_______________________ CONTACT  _________________ */
 
 #contact{
-height:220px;
+height:240px;
 background-color:#937EBF ;
 
 }
@@ -409,6 +409,13 @@ text-decoration:none;
 margin-left:10px;
 }
 
+.contactHide{
+display: none;
+}
+
+.contactShow{
+display: block;
+}
 .txtIndAgain{
 margin-left:20px;
 }

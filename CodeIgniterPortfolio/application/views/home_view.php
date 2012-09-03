@@ -10,6 +10,26 @@
  		
 </head>
 	<body>
+	<div id="contact" class="contactHide">
+		<div id="headContact">
+			<p class="contactHeadFnt">Interested At Reaching Out To Me</p>
+		</div><!-- closed headContact -->
+		<div id="titlesContact">
+			<form action="" method="post">
+				<input class="inputStyle inputFnt inputColor" id="firstLast" type="text" name="firstLast" placeholder="Your First & Last Name"/>
+				<input class="inputStyle inputFnt inputColor" id="email" type="text" name="email" placeholder="Your Email"/>
+				<input class="inputStyle inputFnt inputColor" id="subject" type="text" name="subject" placeholder="Subject Title"/>
+			
+		</div><!-- closed titlesContact -->
+		<div id="messageContact">
+				<input class="inputFnt inputColor" id="subject" type="text" name="subject" placeholder="Place Message Here"/>
+
+				<button class="sendBtnFnt sendBtnStyle" id="sendBtn" type="submit">Send</button>
+			</form><!-- closed form -->
+		</div><!-- closed messageContact -->
+	</div><!-- closed contact -->
+	
+
 		<div id="wrapper">
 		
 			<div id="header">
@@ -17,9 +37,9 @@
 				</div><!-- closed homeReturn -->
 				<div id="navHolder">
 					<ul id="nav">
-						<li class="bott"><?php echo anchor('home','My Work','class="anc navFnt navWork"') ?></li>
-						<li><?php echo anchor('personal','Personal','class="anc navFnt navPers"') ?></li>
-						<li><a class="anc navFnt navCont" href="">Contact</a></li>
+						<li id="ancWork" class="bott"><?php echo anchor('home','My Work','class="anc navFnt navWork"') ?></li>
+						<li id="ancPersonal"><?php echo anchor('personal','Personal','class="anc navFnt navPers"') ?></li>
+						<li id="ancContact"><a class="anc navFnt navCont" href="">Contact</a></li>
 					</ul>
 				</div><!-- closed navHolder -->
 			</div><!-- closed header -->
