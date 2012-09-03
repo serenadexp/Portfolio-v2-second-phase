@@ -5,6 +5,8 @@
  		<link href='img/urlIcon.png' rel='icon' type='image/png'/>
  		<link rel="stylesheet" href="css/reset.css" type="text/css"/>
  		<link rel="stylesheet" href="css/webDetail.css" type="text/css"/> 
+ 		<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+	
  		
 </head>
 	<body>
@@ -62,12 +64,15 @@
 					<div id="finalScreens">
 					<p class="projectFnt"><?php echo $projectName; ?></p>
 						<ul>
-							<li><img class="imgBlock" src="img/finalscr.jpg"/></li>
-							<li><img class="imgBlock" src="img/finalscr.jpg"/></li>
-							<li><img class="imgBlock" src="img/finalscr.jpg"/></li>
-							<li><img class="imgBlock" src="img/finalscr.jpg"/></li>
-							<li><img class="imgBlock" src="img/finalscr.jpg"/></li>
-							<li><img class="imgBlock" src="img/finalscr.jpg"/></li>
+		
+						<li><a href="img/pose.jpg" rel="prettyPhoto[final]" title="Test"><img class="imgBlock" src="img/finalscr.jpg" alt="this is the title"/></a></li>
+						<li><a href="img/pose.jpg" rel="prettyPhoto[final]" title="Test"><img class="imgBlock" src="img/finalscr.jpg" alt="this is the title"/></a></li>
+						<li><a href="img/pose.jpg" rel="prettyPhoto[final]" title="Test"><img class="imgBlock" src="img/finalscr.jpg" alt="this is the title"/></a></li>
+						<li><a href="img/pose.jpg" rel="prettyPhoto[final]" title="Test"><img class="imgBlock" src="img/finalscr.jpg" alt="this is the title"/></a></li>
+						<li><a href="img/pose.jpg" rel="prettyPhoto[final]" title="Test"><img class="imgBlock" src="img/finalscr.jpg" alt="this is the title"/></a></li>
+						<li><a href="img/pose.jpg" rel="prettyPhoto[final]" title="Test"><img class="imgBlock" src="img/finalscr.jpg" alt="this is the title"/></a></li>
+
+							
 						</ul>
 					</div><!--closed finalScreens -->
 			</div><!--closed projectName -->
@@ -99,10 +104,10 @@
 				<p class="headDetailFnt">Production Screens</p>
 				<div id="productionScrHolder">
 					<ul>
-						<li><img class="imgBlock" src="img/proscr.jpg"/></li>
-						<li><img class="imgBlock" src="img/proscr.jpg"/></li>
-						<li><img class="imgBlock" src="img/proscr.jpg"/></li>
-						<li><img class="imgBlock" src="img/proscr.jpg"/></li>
+						<li><a href="img/pose.jpg" rel="prettyPhoto[production]" title="Test"><img class="imgBlock" src="img/proscr.jpg" alt="this is the title"/></a></li>
+						<li><a href="img/pose.jpg" rel="prettyPhoto[production]" title="Test"><img class="imgBlock" src="img/proscr.jpg" alt="this is the title"/></a></li>
+						<li><a href="img/pose.jpg" rel="prettyPhoto[production]" title="Test"><img class="imgBlock" src="img/proscr.jpg" alt="this is the title"/></a></li>
+						<li><a href="img/pose.jpg" rel="prettyPhoto[production]" title="Test"><img class="imgBlock" src="img/proscr.jpg" alt="this is the title"/></a></li>
 					</ul>
 				
 				
@@ -114,8 +119,15 @@
 					<p class="footFnt txtInd">Copyright &copy; Andre Allen 2012</p>
 			</div><!-- closed footer -->	
 		</div><!-- closed wrapper -->
-	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
-	<script type="text/javascript" src="js/jquery.lightbox_me.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
-	</body>
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+
+		<script type="text/javascript" charset="utf-8">
+ 			 $(document).ready(function(){
+ 			   $("a[rel^='prettyPhoto']").prettyPhoto({animation_speed: 'normal'});
+ 			   
+			  });
+		</script>
+		</body>
 </html>
