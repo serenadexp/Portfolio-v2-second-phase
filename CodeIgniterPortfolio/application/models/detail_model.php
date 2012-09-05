@@ -13,7 +13,7 @@ class Detail_model extends CI_Controller {
 	
 
 
-	function information()
+	function information($aNum)
 	{
 		
 
@@ -25,7 +25,7 @@ class Detail_model extends CI_Controller {
 			on projectInformation.project_Info_Id = projects.project_Info_Id
 			JOIN projectImages
 			on projectImages.project_Img_Id = projects.project_Img_Id
-			WHERE project_Id=1;
+			WHERE project_Id='$aNum';
 			");
 
 		return $query;

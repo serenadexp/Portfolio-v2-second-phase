@@ -3,9 +3,9 @@
 		<title>Andre Allen Web Developer & Designer</title>
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>  
  		<link href='img/urlIcon.png' rel='icon' type='image/png'/>
- 		<link rel="stylesheet" href="css/reset.css" type="text/css"/>
- 		<link rel="stylesheet" href="css/webDetail.css" type="text/css"/> 
- 		<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+ 		<link rel="stylesheet" href="../../css/reset.css" type="text/css"/>
+ 		<link rel="stylesheet" href="../../css/webDetail.css" type="text/css"/> 
+ 		<link rel="stylesheet" href="../../css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
 	
  		
 </head>
@@ -31,7 +31,7 @@
 	
 		<div id="wrapper">
 			<div id="header">
-				<div id="homeReturn"><p class="txtInd"><a class="anc nameFnt" href="">Andre Allen</br>Web Developer & Designer</a></p>
+				<div id="homeReturn"><p class="txtInd"><?php echo anchor('home','Andre Allen</br>Web Developer & Designer','class="anc nameFnt"')?></p>
 				</div><!-- closed homeReturn -->
 				<div id="navHolder">
 					<ul id="nav">
@@ -65,10 +65,10 @@
 					<p class="projectFnt"><?php echo $projectName; ?></p>
 						<ul>
 		
-						<li><a href="img/final/exer/full/exerFinal1.jpg" rel="prettyPhoto[final]" title="Test"><img class="imgBlock" src="img/final/exer/thumb/exerFinal1thumb.jpg" alt="this is the title"/></a></li>
-						<li><a href="img/final/exer/full/exerFinal2.jpg" rel="prettyPhoto[final]" title="Test"><img class="imgBlock" src="img/final/exer/thumb/exerFinal2thumb.jpg" alt="this is the title"/></a></li>
-						<li><a href="img/final/exer/full/exerFinal3.jpg" rel="prettyPhoto[final]" title="Test"><img class="imgBlock" src="img/final/exer/thumb/exerFinal3thumb.jpg" alt="this is the title"/></a></li>
-						<li><a href="img/final/exer/full/exerFinal4.png" rel="prettyPhoto[final]" title="Test"><img class="imgBlock" src="img/final/exer/thumb/exerFinal4thumb.jpg" alt="this is the title"/></a></li>
+						<li><a href="../../img/final/exer/full/exerFinal1.jpg" rel="prettyPhoto[final]" title="Test"><img class="imgBlock" src="../../img/final/exer/thumb/exerFinal1thumb.jpg" alt="this is the title"/></a></li>
+						<li><a href="../../img/final/exer/full/exerFinal2.jpg" rel="prettyPhoto[final]" title="Test"><img class="imgBlock" src="../../img/final/exer/thumb/exerFinal2thumb.jpg" alt="this is the title"/></a></li>
+						<li><a href="../../img/final/exer/full/exerFinal3.jpg" rel="prettyPhoto[final]" title="Test"><img class="imgBlock" src="../../img/final/exer/thumb/exerFinal3thumb.jpg" alt="this is the title"/></a></li>
+						<li><a href="../../img/final/exer/full/exerFinal4.png" rel="prettyPhoto[final]" title="Test"><img class="imgBlock" src="../../img/final/exer/thumb/exerFinal4thumb.jpg" alt="this is the title"/></a></li>
 													
 						</ul>
 					</div><!--closed finalScreens -->
@@ -86,14 +86,14 @@
 				<p class="headDetailFnt">Technology Used</p>
 				<div id="techDetailLogo">
 					<ul id="detailLogos">
-						<li><img src="img/sql.png"/></li>
-						<li><img src="img/illu.png"/></li>
-						<li><img src="img/photo.png"/></li>
-						<li><img src="img/css3.png"/></li>
-						<li><img src="img/html5.png"/></li>
-						<li><img src="img/codeIg.png"/></li>
-						<li><img src="img/php.png"/></li>
-						<li><img src="img/jQuery.png"/></li>
+						<li><img src="../../img/sql.png"/></li>
+						<li><img src="../../img/illu.png"/></li>
+						<li><img src="../../img/photo.png"/></li>
+						<li><img src="../../img/css3.png"/></li>
+						<li><img src="../../img/html5.png"/></li>
+						<li><img src="../../img/codeIg.png"/></li>
+						<li><img src="../../img/php.png"/></li>
+						<li><img src="../../img/jQuery.png"/></li>
 					</ul>	
 				</div>	<!--closed techDetailLogos -->
 			</div><!-- closed technologyUsed -->
@@ -101,10 +101,10 @@
 				<p class="headDetailFnt">Production Screens</p>
 				<div id="productionScrHolder">
 					<ul>
-						<li><a href="img/prod/exer/full/exerPro1.jpg" rel="prettyPhoto[production]" title="Test"><img class="imgBlock" src="img/prod/exer/thumb/exerPro1thumb.jpg" alt="this is the title"/></a></li>
-						<li><a href="img/prod/exer/full/exerPro2.jpg" rel="prettyPhoto[production]" title="Test"><img class="imgBlock" src="img/prod/exer/thumb/exerPro2thumb.jpg" alt="this is the title"/></a></li>
-						<li><a href="img/prod/exer/full/exerPro3.jpg" rel="prettyPhoto[production]" title="Test"><img class="imgBlock" src="img/prod/exer/thumb/exerPro3thumb.jpg" alt="this is the title"/></a></li>
-						<li><a href="img/prod/exer/full/exerPro4.jpg" rel="prettyPhoto[production]" title="Test"><img class="imgBlock" src="img/prod/exer/thumb/exerPro4thumb.jpg" alt="this is the title"/></a></li>
+						<li><a href="../../img/prod/exer/full/exerPro1.jpg" rel="prettyPhoto[production]" title="Test"><img class="imgBlock" src="../../img/prod/exer/thumb/exerPro1thumb.jpg" alt="this is the title"/></a></li>
+						<li><a href="../../img/prod/exer/full/exerPro2.jpg" rel="prettyPhoto[production]" title="Test"><img class="imgBlock" src="../../img/prod/exer/thumb/exerPro2thumb.jpg" alt="this is the title"/></a></li>
+						<li><a href="../../img/prod/exer/full/exerPro3.jpg" rel="prettyPhoto[production]" title="Test"><img class="imgBlock" src="../../img/prod/exer/thumb/exerPro3thumb.jpg" alt="this is the title"/></a></li>
+						<li><a href="../../img/prod/exer/full/exerPro4.jpg" rel="prettyPhoto[production]" title="Test"><img class="imgBlock" src="../../img/prod/exer/thumb/exerPro4thumb.jpg" alt="this is the title"/></a></li>
 					</ul>
 				
 				
@@ -116,9 +116,9 @@
 					<p class="footFnt txtInd">Copyright &copy; Andre Allen 2012</p>
 			</div><!-- closed footer -->	
 		</div><!-- closed wrapper -->
-		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
-		<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
-		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="../../js/jquery-1.7.2.min.js"></script>
+		<script src="../../js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="../../js/main.js"></script>
 
 		<script type="text/javascript" charset="utf-8">
  			 $(document).ready(function(){

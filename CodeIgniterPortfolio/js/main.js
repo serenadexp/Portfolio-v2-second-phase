@@ -68,8 +68,8 @@ $(function(){
 				projectName.html("Project: "+data[0].project_Name+"");
 				projectSub.html(""+data[0].sub_Info+"");
 				projectTech.html("<li><img src="+data[0].project_Tech_1+"></li><li><img src="+data[0].project_Tech_2+"></li><li><img src="+data[0].project_Tech_3+"></li><li><img src="+data[0].project_Tech_4+"></li><li><img src="+data[0].project_Tech_5+"></li><li><img src="+data[0].project_Tech_6+"></li>");
-				
-			ancRel.attr('rel',projectNum);
+				ancRel.attr('href','details/index/'+projectNum+'');
+/* 			ancRel.attr('rel',projectNum); */
 	  		}
 
 		
@@ -105,8 +105,8 @@ $(function(){
 				projectName.html("Project: "+data[0].project_Name+"");
 				projectSub.html(""+data[0].sub_Info+"");
 				projectTech.html("<li><img src="+data[0].project_Tech_1+"></li><li><img src="+data[0].project_Tech_2+"></li>");
-				
-				ancRel.attr('rel',projectNum);
+				ancRel.attr('href','details/index/'+projectNum+'');
+/* 				ancRel.attr('rel',projectNum); */
 	  		}
 
 		
@@ -143,8 +143,8 @@ $(function(){
 				projectName.html("Project: "+data[0].project_Name+"");
 				projectSub.html(""+data[0].sub_Info+"");
 				projectTech.html("<li><img src="+data[0].project_Tech_1+"></li><li><img src="+data[0].project_Tech_2+"></li><li><img src="+data[0].project_Tech_3+"></li><li><img src="+data[0].project_Tech_4+"></li><li><img src="+data[0].project_Tech_5+"></li>");
-				
-				ancRel.attr('rel',projectNum);
+				ancRel.attr('href','details/index/'+projectNum+'');
+				/* ancRel.attr('rel',projectNum); */
 	  		}
 
 		
@@ -179,7 +179,10 @@ $(function(){
 				projectName.html("Project: "+data[0].project_Name+"");
 				projectSub.html(""+data[0].sub_Info+"");
 				projectTech.html("<li><img src="+data[0].project_Tech_1+"></li><li><img src="+data[0].project_Tech_2+"></li><li><img src="+data[0].project_Tech_3+"></li><li><img src="+data[0].project_Tech_4+"></li><li><img src="+data[0].project_Tech_5+"></li><li><img src="+data[0].project_Tech_6+"></li>");	
-				ancRel.attr('rel',projectNum);
+				
+				ancRel.attr('href','details/index/'+projectNum+'');
+				// NOT USING THE REL LIKE HOW I THOUGHT I WOULD LIKE PULL THE REL NUM AND SEND IT TO THE CONTROLLER FROM THE ANCHOR ancRel.attr('rel',projectNum);
+				
 	  		}
 
 		

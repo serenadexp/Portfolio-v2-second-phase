@@ -2,7 +2,7 @@
 	<head>
 		<title>Andre Allen Web Developer & Designer</title>
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>  
- 		<link href='img/urlIcon.png' rel='icon' type='image/png'/>
+<!-- CHANGE THIS  -->		<link href='img/portIco.png' rel='icon' type='image/png'/>
  		<link rel="stylesheet" href="css/reset.css" type="text/css"/>
  		<link rel="stylesheet" type="text/css" href="engine1/style.css" />
 		<script type="text/javascript" src="engine1/jquery.js"></script>
@@ -33,7 +33,7 @@
 		<div id="wrapper">
 		
 			<div id="header">
-				<div id="homeReturn"><p class="txtInd"><a class="anc nameFnt" href="">Andre Allen</br>Web Developer & Designer</a></p>
+				<div id="homeReturn"><p class="txtInd"><?php echo anchor('home','Andre Allen</br>Web Developer & Designer','class="anc nameFnt"')?></p>
 				</div><!-- closed homeReturn -->
 				<div id="navHolder">
 					<ul id="nav">
@@ -105,7 +105,7 @@
 					</ul>	
 				</div>	<!--closed contentTechDetail -->
 				<div id="contentMoreDetail">
-					<p><?php echo anchor('details','More Details',array('class'=>'anc contentInfoDetailFnt detailAnc','rel'=>"")) ?></p>
+					<p><?php echo anchor('details/index/1','More Details',array('class'=>'anc contentInfoDetailFnt detailAnc','rel'=>"")) ?></p>
 				</div><!-- closed contentMoreDetail -->
 			</div><!-- closed contentProjectInfo -->
 			<div id="contentProjects">

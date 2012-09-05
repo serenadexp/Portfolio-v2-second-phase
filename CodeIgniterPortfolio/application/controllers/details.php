@@ -16,18 +16,19 @@ class Details extends CI_Controller {
 	}
 
 
-	public function index()
+	public function index($num)
 	{	
-		
-		$this->pullChoice();
+		//var_dump($num);
+		$this->pullChoice($num);
 		
 		
 	}
 
-	public function pullChoice()
+
+	public function pullChoice($ancNum)
 	{
 		
-		$info=$this->detail_model->information();
+		$info=$this->detail_model->information($ancNum);
 		$this->loadDetail($info);
 
 	}
@@ -38,6 +39,7 @@ class Details extends CI_Controller {
 		$this->load->view('detail_view',array('dInfo'=>$info));
 
 	}
+
 
 		
 

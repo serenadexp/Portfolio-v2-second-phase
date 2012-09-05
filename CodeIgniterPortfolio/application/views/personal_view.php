@@ -30,7 +30,7 @@
 
 		<div id="wrapper">
 			<div id="header">
-				<div id="homeReturn"><p class="txtInd"><a class="anc nameFnt" href="">Andre Allen</br>Web Developer & Designer</a></p>
+				<div id="homeReturn"><p class="txtInd"><?php echo anchor('home','Andre Allen</br>Web Developer & Designer','class="anc nameFnt"')?></p>
 				</div><!-- closed homeReturn -->
 				<div id="navHolder">
 					<ul id="nav">
