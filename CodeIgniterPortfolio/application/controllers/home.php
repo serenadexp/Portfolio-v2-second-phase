@@ -36,7 +36,12 @@ class Home extends CI_Controller {
 
 	public function newSelection()
 	{
-			echo $_GET['projectNum'];
+		// header('Content-type: application/json');
+		$catchRel=$_GET['projectNum'];
+		$sendRel=$this->home_model->smallInformation($catchRel);
+		echo json_encode($sendRel);
+			// var_dump($sendRel);
+
 
 	}
 

@@ -1,5 +1,6 @@
 $(function(){
-	
+
+/* CONTENT PROJECTS */	
 	var myContact=$('#contact');
 	var nav=$('#nav li');
 	var contactBorder=$('#ancContact');
@@ -13,6 +14,9 @@ $(function(){
 	var thirdCon=$('#thirdContent');
 	var fourthCon=$('#fourthContent');
 
+/* CONTENT PROJECT INFO */
+	var projectName=$("#contentProjectName p");
+	var projectSub=$('#contentProjectInfoDetail p');
 	$('.navCont').click(function(e)
 	{
 
@@ -65,8 +69,15 @@ $(function(){
 			type: "GET",
 	  		url: baseUrl+"home/newSelection",
 	  		data:{projectNum:projectNum},
+	  		dataType:'json',
 	  		success:function(data){
-				console.log(data);
+				console.log(data[0].project_Name);
+				console.log(data[0].sub_Info);
+				
+				projectName.empty();
+				projectSub.empty();
+				projectName.html("Project: "+data[0].project_Name+"");
+				projectSub.html("Information: "+data[0].sub_Info+"");
 	  		}
 
 		

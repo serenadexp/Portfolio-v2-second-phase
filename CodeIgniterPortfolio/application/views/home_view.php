@@ -119,7 +119,7 @@
 					</div><!-- closed firstContent -->
 					<div class="transTxt"></div>
 					<div id="secondContent" class="contentsProjectBorder">
-						<a id="projectTwo" href="#" rel="2" class="anc">
+						<a id="projectTwo" href="#" rel="3" class="anc">
 							<img class="imgBlock imgBorder" src="img/afroban.jpg"/>
 								<p class="contentProjectsFnt">Logos</p>
 						</a>	
@@ -128,7 +128,7 @@
 				<div id="contentProjectLeft">
 				<div class="transTxt"></div>
 					<div id="thirdContent" class="contentsProjectBorder">
-						<a id="projectThree" href="#" rel="3" class="anc">
+						<a id="projectThree" href="#" rel="2" class="anc">
 							<img class="imgBlock imgBorder" src="img/lookban.jpg"/>
 							<p class="contentProjectsFnt txtInd"><span>Looker</span></p>
 						</a>	

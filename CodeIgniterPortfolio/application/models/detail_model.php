@@ -31,6 +31,7 @@ class Detail_model extends CI_Controller {
 		return $query;
 	}
 
+	
 // 	SELECT DISTINCT project_Name, concept_Info ,design_Info, development_Info,prod_Img_Thumb,prod_Img_Full
 // FROM projects
 // JOIN projectInformation
