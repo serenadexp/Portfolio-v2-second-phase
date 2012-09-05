@@ -34,9 +34,9 @@ class Home extends CI_Controller {
 
 	}
 
-	public function newSelection($relNum)
+	public function newSelection()
 	{
-
+			echo $_GET['projectNum'];
 
 	}
 

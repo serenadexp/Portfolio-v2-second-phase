@@ -30,6 +30,14 @@ class Detail_model extends CI_Controller {
 
 		return $query;
 	}
+
+// 	SELECT DISTINCT project_Name, concept_Info ,design_Info, development_Info,prod_Img_Thumb,prod_Img_Full
+// FROM projects
+// JOIN projectInformation
+// on projectInformation.project_Info_Id = projects.project_Info_Id
+// JOIN projectProdImg
+// on projectProdImg.prod_Assign_Img_Num = projects.prod_Img_Id
+// WHERE project_Id=1 AND prod_Assign_Img_Num=1; grab imgs
 	
 	
 

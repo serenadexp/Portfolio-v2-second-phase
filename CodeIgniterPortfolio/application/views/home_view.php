@@ -111,15 +111,15 @@
 			<div id="contentProjects">
 				<div id="contentProjectRight">
 				<div class="transTxt"></div>
-					<div id="firstContent" class="contentsProjectBorderLight">
-						<a href="" rel="1" class="anc">
+					<div id="firstContent" class="contentsProjectBorder">
+						<a id="projectOne" href="#" rel="1" class="anc">
 							<img class="imgBlock imgBorder" src="img/exban.jpg"/>
 								<p class="contentProjectsFnt "><span>Exercise 7</span></p>
 						</a>
 					</div><!-- closed firstContent -->
 					<div class="transTxt"></div>
 					<div id="secondContent" class="contentsProjectBorder">
-						<a href="" rel="2" class="anc">
+						<a id="projectTwo" href="#" rel="2" class="anc">
 							<img class="imgBlock imgBorder" src="img/afroban.jpg"/>
 								<p class="contentProjectsFnt">Logos</p>
 						</a>	
@@ -128,14 +128,14 @@
 				<div id="contentProjectLeft">
 				<div class="transTxt"></div>
 					<div id="thirdContent" class="contentsProjectBorder">
-						<a href="" rel="3" class="anc">
+						<a id="projectThree" href="#" rel="3" class="anc">
 							<img class="imgBlock imgBorder" src="img/lookban.jpg"/>
 							<p class="contentProjectsFnt txtInd"><span>Looker</span></p>
 						</a>	
 					</div><!-- closed thirdContent -->
 					<div class="transTxt"></div>
 					<div id="fourthContent" class="contentsProjectBorder">
-						<a href="" rel="4" class="anc">
+						<a id="projectFour" href="#" rel="4" class="anc">
 							<img class="imgBlock imgBorder" src="img/casban.jpg"/>
 								<p class="contentProjectsFnt txtInd">CAS</p>
 						</a>		
@@ -153,7 +153,11 @@
 	<script type="text/javascript" src="engine1/wowslider.js"></script>
 	<script type="text/javascript" src="engine1/script.js"></script>
 	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
-	<script type="text/javascript" src="js/jquery.lightbox_me.js"></script>
+	<script type="text/javascript" >
+	var baseUrl= "<?php echo(base_url()); ?>";
+	
+
+	</script>
 	<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>

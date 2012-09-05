@@ -65,14 +65,11 @@
 					<p class="projectFnt"><?php echo $projectName; ?></p>
 						<ul>
 		
-						<li><a href="img/pose.jpg" rel="prettyPhoto[final]" title="Test"><img class="imgBlock" src="img/finalscr.jpg" alt="this is the title"/></a></li>
-						<li><a href="img/pose.jpg" rel="prettyPhoto[final]" title="Test"><img class="imgBlock" src="img/finalscr.jpg" alt="this is the title"/></a></li>
-						<li><a href="img/pose.jpg" rel="prettyPhoto[final]" title="Test"><img class="imgBlock" src="img/finalscr.jpg" alt="this is the title"/></a></li>
-						<li><a href="img/pose.jpg" rel="prettyPhoto[final]" title="Test"><img class="imgBlock" src="img/finalscr.jpg" alt="this is the title"/></a></li>
-						<li><a href="img/pose.jpg" rel="prettyPhoto[final]" title="Test"><img class="imgBlock" src="img/finalscr.jpg" alt="this is the title"/></a></li>
-						<li><a href="img/pose.jpg" rel="prettyPhoto[final]" title="Test"><img class="imgBlock" src="img/finalscr.jpg" alt="this is the title"/></a></li>
-
-							
+						<li><a href="img/final/exer/full/exerFinal1.jpg" rel="prettyPhoto[final]" title="Test"><img class="imgBlock" src="img/final/exer/thumb/exerFinal1thumb.jpg" alt="this is the title"/></a></li>
+						<li><a href="img/final/exer/full/exerFinal2.jpg" rel="prettyPhoto[final]" title="Test"><img class="imgBlock" src="img/final/exer/thumb/exerFinal2thumb.jpg" alt="this is the title"/></a></li>
+						<li><a href="img/final/exer/full/exerFinal3.jpg" rel="prettyPhoto[final]" title="Test"><img class="imgBlock" src="img/final/exer/thumb/exerFinal3thumb.jpg" alt="this is the title"/></a></li>
+						<li><a href="img/final/exer/full/exerFinal4.png" rel="prettyPhoto[final]" title="Test"><img class="imgBlock" src="img/final/exer/thumb/exerFinal4thumb.jpg" alt="this is the title"/></a></li>
+													
 						</ul>
 					</div><!--closed finalScreens -->
 			</div><!--closed projectName -->
@@ -104,10 +101,10 @@
 				<p class="headDetailFnt">Production Screens</p>
 				<div id="productionScrHolder">
 					<ul>
-						<li><a href="img/pose.jpg" rel="prettyPhoto[production]" title="Test"><img class="imgBlock" src="img/proscr.jpg" alt="this is the title"/></a></li>
-						<li><a href="img/pose.jpg" rel="prettyPhoto[production]" title="Test"><img class="imgBlock" src="img/proscr.jpg" alt="this is the title"/></a></li>
-						<li><a href="img/pose.jpg" rel="prettyPhoto[production]" title="Test"><img class="imgBlock" src="img/proscr.jpg" alt="this is the title"/></a></li>
-						<li><a href="img/pose.jpg" rel="prettyPhoto[production]" title="Test"><img class="imgBlock" src="img/proscr.jpg" alt="this is the title"/></a></li>
+						<li><a href="img/prod/exer/full/exerPro1.jpg" rel="prettyPhoto[production]" title="Test"><img class="imgBlock" src="img/prod/exer/thumb/exerPro1thumb.jpg" alt="this is the title"/></a></li>
+						<li><a href="img/prod/exer/full/exerPro2.jpg" rel="prettyPhoto[production]" title="Test"><img class="imgBlock" src="img/prod/exer/thumb/exerPro2thumb.jpg" alt="this is the title"/></a></li>
+						<li><a href="img/prod/exer/full/exerPro3.jpg" rel="prettyPhoto[production]" title="Test"><img class="imgBlock" src="img/prod/exer/thumb/exerPro3thumb.jpg" alt="this is the title"/></a></li>
+						<li><a href="img/prod/exer/full/exerPro4.jpg" rel="prettyPhoto[production]" title="Test"><img class="imgBlock" src="img/prod/exer/thumb/exerPro4thumb.jpg" alt="this is the title"/></a></li>
 					</ul>
 				
 				
