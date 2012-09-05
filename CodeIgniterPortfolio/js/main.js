@@ -17,6 +17,8 @@ $(function(){
 /* CONTENT PROJECT INFO */
 	var projectName=$("#contentProjectName p");
 	var projectSub=$('#contentProjectInfoDetail p');
+	var projectTech=$('#contentTechDetail ul');
+	var ancRel=$('#contentMoreDetail p a');
 	$('.navCont').click(function(e)
 	{
 
@@ -50,6 +52,29 @@ $(function(){
 		
 		var projectNum = $(this).attr('rel');
 		console.log(projectNum);
+		
+		$.ajax({
+			type: "GET",
+	  		url: baseUrl+"home/newSelection",
+	  		data:{projectNum:projectNum},
+	  		dataType:'json',
+	  		success:function(data){
+				console.log(data[0].project_Name);
+				console.log(data);
+				
+				projectName.empty();
+				projectSub.empty();
+				projectTech.empty();
+				projectName.html("Project: "+data[0].project_Name+"");
+				projectSub.html(""+data[0].sub_Info+"");
+				projectTech.html("<li><img src="+data[0].project_Tech_1+"></li><li><img src="+data[0].project_Tech_2+"></li><li><img src="+data[0].project_Tech_3+"></li><li><img src="+data[0].project_Tech_4+"></li><li><img src="+data[0].project_Tech_5+"></li><li><img src="+data[0].project_Tech_6+"></li>");
+				
+			ancRel.attr('rel',projectNum);
+	  		}
+
+		
+		})
+
 
 
 	e.preventDefault();
@@ -72,12 +97,16 @@ $(function(){
 	  		dataType:'json',
 	  		success:function(data){
 				console.log(data[0].project_Name);
-				console.log(data[0].sub_Info);
+				console.log(data);
 				
 				projectName.empty();
 				projectSub.empty();
+				projectTech.empty();
 				projectName.html("Project: "+data[0].project_Name+"");
-				projectSub.html("Information: "+data[0].sub_Info+"");
+				projectSub.html(""+data[0].sub_Info+"");
+				projectTech.html("<li><img src="+data[0].project_Tech_1+"></li><li><img src="+data[0].project_Tech_2+"></li>");
+				
+				ancRel.attr('rel',projectNum);
 	  		}
 
 		
@@ -99,6 +128,30 @@ $(function(){
 		var projectNum = $(this).attr('rel');
 		console.log(projectNum);
 		
+		$.ajax({
+			type: "GET",
+	  		url: baseUrl+"home/newSelection",
+	  		data:{projectNum:projectNum},
+	  		dataType:'json',
+	  		success:function(data){
+				console.log(data[0].project_Name);
+				console.log(data);
+				
+				projectName.empty();
+				projectSub.empty();
+				projectTech.empty();
+				projectName.html("Project: "+data[0].project_Name+"");
+				projectSub.html(""+data[0].sub_Info+"");
+				projectTech.html("<li><img src="+data[0].project_Tech_1+"></li><li><img src="+data[0].project_Tech_2+"></li><li><img src="+data[0].project_Tech_3+"></li><li><img src="+data[0].project_Tech_4+"></li><li><img src="+data[0].project_Tech_5+"></li>");
+				
+				ancRel.attr('rel',projectNum);
+	  		}
+
+		
+		})
+		console.log(projectNum);
+
+		
 	e.preventDefault();
 	});	
 
@@ -111,6 +164,26 @@ $(function(){
 		fourthCon.addClass('contentsProjectBorderLight');
 
 		var projectNum = $(this).attr('rel');
+		$.ajax({
+			type: "GET",
+	  		url: baseUrl+"home/newSelection",
+	  		data:{projectNum:projectNum},
+	  		dataType:'json',
+	  		success:function(data){
+				console.log(data[0].project_Name);
+				console.log(data);
+				
+				projectName.empty();
+				projectSub.empty();
+				projectTech.empty();
+				projectName.html("Project: "+data[0].project_Name+"");
+				projectSub.html(""+data[0].sub_Info+"");
+				projectTech.html("<li><img src="+data[0].project_Tech_1+"></li><li><img src="+data[0].project_Tech_2+"></li><li><img src="+data[0].project_Tech_3+"></li><li><img src="+data[0].project_Tech_4+"></li><li><img src="+data[0].project_Tech_5+"></li><li><img src="+data[0].project_Tech_6+"></li>");	
+				ancRel.attr('rel',projectNum);
+	  		}
+
+		
+		})
 		console.log(projectNum);
 		
 	e.preventDefault();

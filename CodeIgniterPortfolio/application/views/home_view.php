@@ -111,7 +111,7 @@
 			<div id="contentProjects">
 				<div id="contentProjectRight">
 				<div class="transTxt"></div>
-					<div id="firstContent" class="contentsProjectBorder">
+					<div id="firstContent" class="contentsProjectBorder contentsProjectBorderLight">
 						<a id="projectOne" href="#" rel="1" class="anc">
 							<img class="imgBlock imgBorder" src="img/exban.jpg"/>
 								<p class="contentProjectsFnt "><span>Exercise 7</span></p>
