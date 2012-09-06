@@ -2,7 +2,7 @@
 	<head>
 		<title>Andre Allen Web Developer & Designer</title>
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>  
- 		<link href='img/urlIcon.png' rel='icon' type='image/png'/>
+ 		<link href='img/portIco.png' rel='icon' type='image/png'/>
  		<link rel="stylesheet" href="css/reset.css" type="text/css"/>
  		<link rel="stylesheet" href="css/webPersonal.css" type="text/css"/> 
  		

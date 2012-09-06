@@ -2,7 +2,7 @@
 	<head>
 		<title>Andre Allen Web Developer & Designer</title>
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>  
- 		<link href='img/urlIcon.png' rel='icon' type='image/png'/>
+ 		<link href='img/portIco.png' rel='icon' type='image/png'/>
  		<link rel="stylesheet" href="../../css/reset.css" type="text/css"/>
  		<link rel="stylesheet" href="../../css/webDetail.css" type="text/css"/> 
  		<link rel="stylesheet" href="../../css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
@@ -47,16 +47,30 @@
 						$projectConcept=$infoDetails->concept_Info;
 						$projectDesign=$infoDetails->design_Info;
 						$projectDevelopment=$infoDetails->development_Info;
-						$projectFinal1=$infoDetails->final_Img_1;
+						/*
+$projectFinal1=$infoDetails->final_Img_1;
 						$projectFinal2=$infoDetails->final_Img_2;
 						$projectFinal3=$infoDetails->final_Img_3;
 						$projectFinal4=$infoDetails->final_Img_4;
 						$projectFinal5=$infoDetails->final_Img_5;
 						$projectFinal6=$infoDetails->final_Img_6;
-						$projectProd1=$infoDetails->production_Img_1;
-						$projectProd2=$infoDetails->production_Img_2;
-						$projectProd3=$infoDetails->production_Img_3;
-						$projectProd4=$infoDetails->production_Img_4;
+*/
+						$projectProd1=$infoDetails->prod_Img_Thumb;
+					/*
+	$projectProd2=$infoDetails->prod_Img_Thumb;
+						$projectProd3=$infoDetails->prod_Img_Thumb;
+*/
+						/*
+$projectProd4=$infoDetails->prod_Img_Thumb;
+						$projectProdFull1=$infoDetails->prod_Img_Full;
+*/
+						/*
+$projectProdFull2=$infoDetails->prod_Img_Full;
+						$projectProdFull3=$infoDetails->prod_Img_Full;
+						$projectProdFull4=$infoDetails->prod_Img_Full;
+						
+*/
+						
 						
 					?>	
 					<?php endforeach;?>
@@ -64,12 +78,13 @@
 					<div id="finalScreens">
 					<p class="projectFnt"><?php echo $projectName; ?></p>
 						<ul>
-		
-						<li><a href="../../img/final/exer/full/exerFinal1.jpg" rel="prettyPhoto[final]" title="Test"><img class="imgBlock" src="../../img/final/exer/thumb/exerFinal1thumb.jpg" alt="this is the title"/></a></li>
-						<li><a href="../../img/final/exer/full/exerFinal2.jpg" rel="prettyPhoto[final]" title="Test"><img class="imgBlock" src="../../img/final/exer/thumb/exerFinal2thumb.jpg" alt="this is the title"/></a></li>
-						<li><a href="../../img/final/exer/full/exerFinal3.jpg" rel="prettyPhoto[final]" title="Test"><img class="imgBlock" src="../../img/final/exer/thumb/exerFinal3thumb.jpg" alt="this is the title"/></a></li>
-						<li><a href="../../img/final/exer/full/exerFinal4.png" rel="prettyPhoto[final]" title="Test"><img class="imgBlock" src="../../img/final/exer/thumb/exerFinal4thumb.jpg" alt="this is the title"/></a></li>
-													
+		<?php foreach($informD->result() as $infoDetails):
+			$projectFinal=$infoDetails->final_Img_Thumb;
+			$projectFinalFull=$infoDetails->final_Img_Full;
+		?>
+						<li><a href="../../<?php echo $projectFinalFull;?>" rel="prettyPhoto[final]" title="Test"><img class="imgBlock" src="../../<?php echo $projectFinal;?>" alt="this is the title"/></a></li>
+		<?php endforeach;?>	
+						
 						</ul>
 					</div><!--closed finalScreens -->
 			</div><!--closed projectName -->
@@ -101,10 +116,18 @@
 				<p class="headDetailFnt">Production Screens</p>
 				<div id="productionScrHolder">
 					<ul>
-						<li><a href="../../img/prod/exer/full/exerPro1.jpg" rel="prettyPhoto[production]" title="Test"><img class="imgBlock" src="../../img/prod/exer/thumb/exerPro1thumb.jpg" alt="this is the title"/></a></li>
-						<li><a href="../../img/prod/exer/full/exerPro2.jpg" rel="prettyPhoto[production]" title="Test"><img class="imgBlock" src="../../img/prod/exer/thumb/exerPro2thumb.jpg" alt="this is the title"/></a></li>
+					<?php foreach($dInfo->result() as $infoDetails):
+					$projectProd=$infoDetails->prod_Img_Thumb;
+					
+					$projectProdFull=$infoDetails->prod_Img_Full;
+					?>
+						<li><a href="../../<?php echo $projectProdFull;?>" rel="prettyPhoto[production]" title="Test"><img class="imgBlock" src="../../<?php echo $projectProd; ?>" alt="this is the title"/></a></li>
+					<?php endforeach;?>	
+					<!--
+	<li><a href="../../img/prod/exer/full/exerPro2.jpg" rel="prettyPhoto[production]" title="Test"><img class="imgBlock" src="../../img/prod/exer/thumb/exerPro2thumb.jpg" alt="this is the title"/></a></li>
 						<li><a href="../../img/prod/exer/full/exerPro3.jpg" rel="prettyPhoto[production]" title="Test"><img class="imgBlock" src="../../img/prod/exer/thumb/exerPro3thumb.jpg" alt="this is the title"/></a></li>
 						<li><a href="../../img/prod/exer/full/exerPro4.jpg" rel="prettyPhoto[production]" title="Test"><img class="imgBlock" src="../../img/prod/exer/thumb/exerPro4thumb.jpg" alt="this is the title"/></a></li>
+-->
 					</ul>
 				
 				

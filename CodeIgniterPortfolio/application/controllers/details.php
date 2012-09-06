@@ -29,14 +29,15 @@ class Details extends CI_Controller {
 	{
 		
 		$info=$this->detail_model->information($ancNum);
-		$this->loadDetail($info);
+		$infoD=$this->detail_model->informationDetails($ancNum);
+		$this->loadDetail($info,$infoD);
 
 	}
 
-	public function loadDetail($info)
+	public function loadDetail($info,$infoD)
 	{
 
-		$this->load->view('detail_view',array('dInfo'=>$info));
+		$this->load->view('detail_view',array('dInfo'=>$info,'informD'=>$infoD));
 
 	}
 

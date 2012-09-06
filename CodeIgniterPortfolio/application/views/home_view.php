@@ -2,7 +2,7 @@
 	<head>
 		<title>Andre Allen Web Developer & Designer</title>
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>  
-<!-- CHANGE THIS  -->		<link href='img/portIco.png' rel='icon' type='image/png'/>
+		<link href='img/portIco.png' rel='icon' type='image/png'/>
  		<link rel="stylesheet" href="css/reset.css" type="text/css"/>
  		<link rel="stylesheet" type="text/css" href="engine1/style.css" />
 		<script type="text/javascript" src="engine1/jquery.js"></script>
