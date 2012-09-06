@@ -46,44 +46,20 @@
 						$projectName=$infoDetails->project_Name;
 						$projectConcept=$infoDetails->concept_Info;
 						$projectDesign=$infoDetails->design_Info;
-						$projectDevelopment=$infoDetails->development_Info;
-						/*
-$projectFinal1=$infoDetails->final_Img_1;
-						$projectFinal2=$infoDetails->final_Img_2;
-						$projectFinal3=$infoDetails->final_Img_3;
-						$projectFinal4=$infoDetails->final_Img_4;
-						$projectFinal5=$infoDetails->final_Img_5;
-						$projectFinal6=$infoDetails->final_Img_6;
-*/
-						$projectProd1=$infoDetails->prod_Img_Thumb;
-					/*
-	$projectProd2=$infoDetails->prod_Img_Thumb;
-						$projectProd3=$infoDetails->prod_Img_Thumb;
-*/
-						/*
-$projectProd4=$infoDetails->prod_Img_Thumb;
-						$projectProdFull1=$infoDetails->prod_Img_Full;
-*/
-						/*
-$projectProdFull2=$infoDetails->prod_Img_Full;
-						$projectProdFull3=$infoDetails->prod_Img_Full;
-						$projectProdFull4=$infoDetails->prod_Img_Full;
-						
-*/
-						
-						
+						$projectDevelopment=$infoDetails->development_Info;		
 					?>	
-					<?php endforeach;?>
+				<?php endforeach;?>
 
 					<div id="finalScreens">
 					<p class="projectFnt"><?php echo $projectName; ?></p>
 						<ul>
-		<?php foreach($informD->result() as $infoDetails):
-			$projectFinal=$infoDetails->final_Img_Thumb;
-			$projectFinalFull=$infoDetails->final_Img_Full;
-		?>
+				<?php foreach($informD->result() as $infoDetails):
+					$projectFinal=$infoDetails->final_Img_Thumb;
+					$projectFinalFull=$infoDetails->final_Img_Full;
+				?>
 						<li><a href="../../<?php echo $projectFinalFull;?>" rel="prettyPhoto[final]" title="Test"><img class="imgBlock" src="../../<?php echo $projectFinal;?>" alt="this is the title"/></a></li>
-		<?php endforeach;?>	
+		
+				<?php endforeach;?>	
 						
 						</ul>
 					</div><!--closed finalScreens -->
@@ -101,14 +77,14 @@ $projectProdFull2=$infoDetails->prod_Img_Full;
 				<p class="headDetailFnt">Technology Used</p>
 				<div id="techDetailLogo">
 					<ul id="detailLogos">
-						<li><img src="../../img/sql.png"/></li>
-						<li><img src="../../img/illu.png"/></li>
-						<li><img src="../../img/photo.png"/></li>
-						<li><img src="../../img/css3.png"/></li>
-						<li><img src="../../img/html5.png"/></li>
-						<li><img src="../../img/codeIg.png"/></li>
-						<li><img src="../../img/php.png"/></li>
-						<li><img src="../../img/jQuery.png"/></li>
+					<?php foreach($informTech->result() as $infoDetails):
+					$projectTech=$infoDetails->used_Tech;
+					
+					?>
+					<li><img src="../../<?php echo $projectTech;?>"/></li>
+					<?php endforeach;?>	
+						
+					
 					</ul>	
 				</div>	<!--closed techDetailLogos -->
 			</div><!-- closed technologyUsed -->

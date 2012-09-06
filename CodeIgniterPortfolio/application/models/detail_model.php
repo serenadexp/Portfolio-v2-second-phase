@@ -15,18 +15,17 @@ class Detail_model extends CI_Controller {
 
 	function information($aNum)
 	{
-		
 
 		$query=$this->db->query("
-			
-		SELECT DISTINCT project_Name, concept_Info ,design_Info, development_Info,prod_Img_Thumb,prod_Img_Full
-FROM projects
-JOIN projectInformation
-on projectInformation.project_Info_Id = projects.project_Info_Id
-JOIN projectProdImg
-on projectProdImg.prod_Assign_Img_Num = projects.prod_Img_Id
-WHERE project_Id=$aNum AND prod_Assign_Img_Num='$aNum';
-			");
+				
+			SELECT DISTINCT project_Name, concept_Info ,design_Info, development_Info,prod_Img_Thumb,prod_Img_Full
+			FROM projects
+			JOIN projectInformation
+			on projectInformation.project_Info_Id = projects.project_Info_Id
+			JOIN projectProdImg
+			on projectProdImg.prod_Assign_Img_Num = projects.prod_Img_Id
+			WHERE project_Id=$aNum AND prod_Assign_Img_Num='$aNum';
+		");
 
 		return $query;
 	}
@@ -35,22 +34,38 @@ WHERE project_Id=$aNum AND prod_Assign_Img_Num='$aNum';
 	function informationDetails($aNum)
 	{
 		
-
 		$query=$this->db->query("
 			
 			SELECT DISTINCT project_Name, final_Img_Thumb,final_Img_Full
-FROM projects
-JOIN projectInformation
-on projectInformation.project_Info_Id = projects.project_Info_Id
-JOIN projectFinalImg
-on projectFinalImg.project_Assign_Img_Num= projects.project_Final_Id
-WHERE project_Id='$aNum' AND project_Assign_Img_Num='$aNum';
-			");
+			FROM projects
+			JOIN projectInformation
+			on projectInformation.project_Info_Id = projects.project_Info_Id
+			JOIN projectFinalImg
+			on projectFinalImg.project_Assign_Img_Num= projects.project_Final_Id
+			WHERE project_Id='$aNum' AND project_Assign_Img_Num='$aNum';
+		");
 
 		return $query;
 	}
 	
+
 	
+	function informationTechUsed($aNum)
+	{
+		
+		$query=$this->db->query("
+			SELECT DISTINCT project_Name,used_Tech
+			FROM projects
+			JOIN projectInformation
+			on projectInformation.project_Info_Id = projects.project_Info_Id
+			JOIN projectTechnologyUsed
+			on projectTechnologyUsed.assign_Tech_Num= projects.used_Tech_Id
+			WHERE project_Id='$aNum' AND assign_Tech_Num='$aNum';
+			
+		");
+
+		return $query;
+	}
 }
 
 ?>
