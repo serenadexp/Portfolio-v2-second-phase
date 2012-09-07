@@ -2,7 +2,7 @@
 	<head>
 		<title>Andre Allen Web Developer & Designer</title>
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>  
- 		<link href='img/portIco.png' rel='icon' type='image/png'/>
+ 		<link href='../../img/portIco.png' rel='icon' type='image/png'/>
  		<link rel="stylesheet" href="../../css/reset.css" type="text/css"/>
  		<link rel="stylesheet" href="../../css/webDetail.css" type="text/css"/> 
  		<link rel="stylesheet" href="../../css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
@@ -22,7 +22,7 @@
 			
 		</div><!-- closed titlesContact -->
 		<div id="messageContact">
-				<input class="inputFnt inputColor" id="subject" type="text" name="subject" placeholder="Place Message Here"/>
+				<input class="inputFnt inputColor" id="subject" type="text" name="message" placeholder="Place Message Here"/>
 
 				<button class="sendBtnFnt sendBtnStyle" id="sendBtn" type="submit">Send</button>
 			</form><!-- closed form -->
@@ -31,13 +31,13 @@
 	
 		<div id="wrapper">
 			<div id="header">
-				<div id="homeReturn"><p class="txtInd"><?php echo anchor('home','Andre Allen</br>Web Developer & Designer','class="anc nameFnt"')?></p>
+				<div id="homeReturn"><p title="Andre Allen Web Developer and Designer" class="txtInd"><?php echo anchor('home','Andre Allen</br>Web Developer & Designer','class="anc nameFnt"')?></p>
 				</div><!-- closed homeReturn -->
 				<div id="navHolder">
 					<ul id="nav">
-						<li id="ancWork" class="bott"><?php echo anchor('home','My Work','class="anc navFnt navWork"') ?></li>
-						<li id="ancPersonal"><?php echo anchor('personal','Personal','class="anc navFnt navPers"') ?></li>
-						<li id="ancContact"><a class="anc navFnt navCont" href="">Contact</a></li>
+						<li id="ancWork" class="bott"><?php echo anchor('home','My Work',array('class'=>"anc navFnt navWork",'alt'=>'My Work','title'=>'My Work')) ?></li>
+						<li id="ancPersonal"><?php echo anchor('personal','Personal',array('class'=>"anc navFnt navPers",'alt'=>'Personal','title'=>'Personal')) ?></li>
+						<li id="ancContact"><a class="anc navFnt navCont" title="Contact" alt="Contact" href="">Contact</a></li>
 					</ul>
 				</div><!-- closed navHolder -->
 			</div><!-- closed header -->
@@ -56,8 +56,9 @@
 				<?php foreach($informD->result() as $infoDetails):
 					$projectFinal=$infoDetails->final_Img_Thumb;
 					$projectFinalFull=$infoDetails->final_Img_Full;
+					$projectFinalNames=$infoDetails->desc_Title;
 				?>
-						<li><a href="../../<?php echo $projectFinalFull;?>" rel="prettyPhoto[final]" title="Test"><img class="imgBlock" src="../../<?php echo $projectFinal;?>" alt="this is the title"/></a></li>
+						<li><a href="../../<?php echo $projectFinalFull;?>" rel="prettyPhoto[final]"><img class="imgBlock" src="../../<?php echo $projectFinal;?>" alt="<?php echo $projectFinalNames;?>"/></a></li>
 		
 				<?php endforeach;?>	
 						
@@ -79,9 +80,10 @@
 					<ul id="detailLogos">
 					<?php foreach($informTech->result() as $infoDetails):
 					$projectTech=$infoDetails->used_Tech;
+					$projectTechNames=$infoDetails->img_Names;
 					
 					?>
-					<li><img src="../../<?php echo $projectTech;?>"/></li>
+					<li><img title="<?php echo $projectTechNames;?>" alt="<?php echo $projectTechNames;?>" src="../../<?php echo $projectTech;?>"/></li>
 					<?php endforeach;?>	
 						
 					
@@ -94,16 +96,11 @@
 					<ul>
 					<?php foreach($dInfo->result() as $infoDetails):
 					$projectProd=$infoDetails->prod_Img_Thumb;
-					
+					$projectProdTitle=$infoDetails->desc_Title;
 					$projectProdFull=$infoDetails->prod_Img_Full;
 					?>
-						<li><a href="../../<?php echo $projectProdFull;?>" rel="prettyPhoto[production]" title="Test"><img class="imgBlock" src="../../<?php echo $projectProd; ?>" alt="this is the title"/></a></li>
+						<li><a href="../../<?php echo $projectProdFull;?>" rel="prettyPhoto[production]"><img class="imgBlock" src="../../<?php echo $projectProd; ?>" alt="<?php echo $projectProdTitle; ?>"/></a></li>
 					<?php endforeach;?>	
-					<!--
-	<li><a href="../../img/prod/exer/full/exerPro2.jpg" rel="prettyPhoto[production]" title="Test"><img class="imgBlock" src="../../img/prod/exer/thumb/exerPro2thumb.jpg" alt="this is the title"/></a></li>
-						<li><a href="../../img/prod/exer/full/exerPro3.jpg" rel="prettyPhoto[production]" title="Test"><img class="imgBlock" src="../../img/prod/exer/thumb/exerPro3thumb.jpg" alt="this is the title"/></a></li>
-						<li><a href="../../img/prod/exer/full/exerPro4.jpg" rel="prettyPhoto[production]" title="Test"><img class="imgBlock" src="../../img/prod/exer/thumb/exerPro4thumb.jpg" alt="this is the title"/></a></li>
--->
 					</ul>
 				
 				

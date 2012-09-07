@@ -9,7 +9,7 @@ class Details extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->helper(array('url','form'));
-		$this->load->library('session');
+		$this->load->library('email');
 		$this->load->model('detail_model');
 
 		/* always put constructs in ur php files it allows you to gain access on a global level and imports the file you want so the document has access to it */
@@ -18,10 +18,7 @@ class Details extends CI_Controller {
 
 	public function index($num)
 	{	
-		//var_dump($num);
 		$this->pullChoice($num);
-		
-		
 	}
 
 

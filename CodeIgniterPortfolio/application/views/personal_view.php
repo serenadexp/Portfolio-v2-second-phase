@@ -20,7 +20,7 @@
 			
 		</div><!-- closed titlesContact -->
 		<div id="messageContact">
-				<input class="inputFnt inputColor" id="subject" type="text" name="subject" placeholder="Place Message Here"/>
+				<input class="inputFnt inputColor" id="subject" type="text" name="message" placeholder="Place Message Here"/>
 
 				<button class="sendBtnFnt sendBtnStyle" id="sendBtn" type="submit">Send</button>
 			</form><!-- closed form -->
@@ -30,7 +30,7 @@
 
 		<div id="wrapper">
 			<div id="header">
-				<div id="homeReturn"><p class="txtInd"><?php echo anchor('home','Andre Allen</br>Web Developer & Designer','class="anc nameFnt"')?></p>
+				<div id="homeReturn"><p title="Andre Allen Web Developer and Designer" class="txtInd"><?php echo anchor('home','Andre Allen</br>Web Developer & Designer','class="anc nameFnt"')?></p>
 				</div><!-- closed homeReturn -->
 				<div id="navHolder">
 					<ul id="nav">
@@ -54,11 +54,11 @@
 			<div id="personalDetails">
 				<div id="transPersonal"></div><!--closed transPersonal -->
 				<div id="picPose">
-					<img class="imgBlock" src="img/pose.jpg"/>
+					<img class="imgBlock" alt="Andre Allen Web Developer & Designer" title="Andre Allen Web Developer and Designer" src="img/pose.jpg"/>
 				</div>
 				<div id="myDescription">
 					<p class="whoFnt txtInd">Who Am I</p>
-					<p class="describeMeFnt txtInd">Growing up in the Florida sun and having a strong mother who’s strong morals have shaped me to a 						playful yet responsible person. Given a taste of what the web has to offer in high school. I took it a step further and attended 						Full Sail University and made my love of web my major. Immersed with many kinds of people I was able to network with people, learn 						many skills and tools that make the web what it is today as well as what we can do to push it further. The skills I have currently 						acquired are outlined below as well a link to my resume. <a class="anc resColor" href="https://docs.google.com/open?id=0B9ZcU-l0n9MLdml1RFB1UTVuMXc">Pull my resume here.</a>  
+					<p class="describeMeFnt txtInd">Growing up in the Florida sun and having a strong mother who’s strong morals have shaped me to a 						playful yet responsible person. Given a taste of what the web has to offer in high school. I took it a step further and attended 						Full Sail University and made my love of web my major. Immersed with many kinds of people I was able to network with people, learn 						many skills and tools that make the web what it is today as well as what we can do to push it further. The skills I have currently 						acquired are outlined below as well a link to my resume. <a title="Web Developer Resume" class="anc resColor" href="https://docs.google.com/open?id=0B9ZcU-l0n9MLdml1RFB1UTVuMXc">Pull my resume here.</a>  
   				</p>
   				</div><!--closed myDescription -->
 				
@@ -71,12 +71,12 @@
 				<div id="skillColOne">
 					<div class="skillContainer">
 					<div class="transSkillCol"></div><!--closed transSkillCol -->
-						<p class="skillColHeadFnt txtInd">JavaScript</p>
+						<p title="JavaScript" class="skillColHeadFnt txtInd">JavaScript</p>
 						<p class="skillColBodyFnt txtInd">Bringing interactivity to users with JQuery, JQuery Mobile and JQuery UI.</p>	</div><!--closed skillContainer -->
 						<div class="skillContainerLine"></div><!--closed skillContainerLine -->
 					<div class="skillContainer">
 					<div class="transSkillCol"></div><!--closed transSkillCol -->
-						<p class="skillColHeadFnt txtInd">HTML & CSS</p>
+						<p title="HTML and CSS " class="skillColHeadFnt txtInd">HTML & CSS</p>
 						<p class="skillColBodyFnt txtInd">Creating the layout and style of a page
 with HTML5, XHTML, CSS3 and SASS.</p>
 					</div><!--closed skillContainer -->
@@ -86,13 +86,13 @@ with HTML5, XHTML, CSS3 and SASS.</p>
 				<div id="skillColTwo">
 					<div class="skillContainer">
 					<div class="transSkillCol"></div><!--closed transSkillCol -->
-						<p class="skillColHeadFnt txtInd">MYSQL</p>
+						<p title="MYSQL" class="skillColHeadFnt txtInd">MYSQL</p>
 						<p class="skillColBodyFnt txtInd">Developing Structured database that deliver optimized queries.</p>
 					</div><!--closed skillContainer -->
 						<div class="skillContainerLine"></div><!--closed skillContainerLine -->
 					<div class="skillContainer">
 					<div class="transSkillCol"></div><!--closed transSkillCol -->
-						<p class="skillColHeadFnt txtInd">ActionScript 3 & Flex</p>
+						<p title="ActionScript 3 and Flex" class="skillColHeadFnt txtInd">ActionScript 3 & Flex</p>
 						<p class="skillColBodyFnt txtInd">Create secured content or applications that users can enjoy.</p>
 					</div><!--closed skillContainer -->
 						<div class="skillContainerLine"></div><!--closed skillContainerLine -->
@@ -101,14 +101,14 @@ with HTML5, XHTML, CSS3 and SASS.</p>
 				<div id="skillColThree">
 					<div class="skillContainer">
 						<div class="transSkillCol"></div><!--closed transSkillCol -->
-						<p class="skillColHeadFnt txtInd">Adobe Creative Suite</p>
+						<p title="Adobe Creative Suite" class="skillColHeadFnt txtInd">Adobe Creative Suite</p>
 						<p class="skillColBodyFnt txtInd">From wireframes to design comps with the help of Illustrator, Photoshop Premiere Pro,
 InDesign and Media Encoder.</p>
 					</div><!--closed skillContainer -->
 						<div class="skillContainerLine"></div><!--closed skillContainerLine -->
 					<div class="skillContainer">
 					<div class="transSkillCol"></div><!--closed transSkillCol -->
-					<p class="skillColHeadFnt txtInd">PHP5</p>
+					<p title="PHP5" class="skillColHeadFnt txtInd">PHP5</p>
 					<p class="skillColBodyFnt txtInd">The backend power that makes web 
 based items dynamic with MVC,
 Code Igniter framework and OOP.</p>

@@ -18,7 +18,7 @@ class Detail_model extends CI_Controller {
 
 		$query=$this->db->query("
 				
-			SELECT DISTINCT project_Name, concept_Info ,design_Info, development_Info,prod_Img_Thumb,prod_Img_Full
+			SELECT DISTINCT project_Name,concept_Info,design_Info,development_Info,prod_Img_Thumb,prod_Img_Full,desc_Title
 			FROM projects
 			JOIN projectInformation
 			on projectInformation.project_Info_Id = projects.project_Info_Id
@@ -36,7 +36,7 @@ class Detail_model extends CI_Controller {
 		
 		$query=$this->db->query("
 			
-			SELECT DISTINCT project_Name, final_Img_Thumb,final_Img_Full
+			SELECT DISTINCT project_Name,final_Img_Thumb,final_Img_Full,desc_Title
 			FROM projects
 			JOIN projectInformation
 			on projectInformation.project_Info_Id = projects.project_Info_Id
@@ -54,7 +54,7 @@ class Detail_model extends CI_Controller {
 	{
 		
 		$query=$this->db->query("
-			SELECT DISTINCT project_Name,used_Tech
+			SELECT DISTINCT project_Name,used_Tech,img_Names
 			FROM projects
 			JOIN projectInformation
 			on projectInformation.project_Info_Id = projects.project_Info_Id
