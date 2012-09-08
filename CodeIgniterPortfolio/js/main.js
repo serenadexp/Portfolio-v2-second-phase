@@ -28,6 +28,7 @@ $(function(){
 	var sendBtnDetail=$('#sendDetailBtn');
 	var message=$('#message');
 	var warn=$('#warn');
+	var success=$('#warn p');
 	
 	$('.navCont').click(function(e)
 	{
@@ -51,7 +52,8 @@ $(function(){
 	})	
 	
 	send.click(function(e){
-	
+		
+		
 		if(first.val()==''||email.val()==''||subject.val()==''||message.val()=='')
 		{
 			warn.removeClass('warnHide').addClass('warnShow');
@@ -59,9 +61,14 @@ $(function(){
 		else
 		
 		{
-			if(warn.hasClass('warnShow')){
-				warn.removeClass('warnShow').addClass('warnHide');
+			if(warn.hasClass('warnShow'))
+			{
+				
+				warn.removeClass('warnFnt').addClass('succFnt');
+				success.html('Message Sent!').fadeOut(2000);
 			}
+						
+					
 			$.ajax({
 				type:"GET",
 		  		url: baseUrl+"home/emailSend",
@@ -72,7 +79,12 @@ $(function(){
 					{
 						contactBorder.removeClass('bottContact');
 						workBorder.addClass('bott');
-						myContact.slideUp('slow').removeClass('contactShow').addClass('contactHide');	
+						myContact.slideUp('slow').removeClass('contactShow').addClass('contactHide');
+						success.empty();
+						warn.removeClass('warnFnt').addClass('succFnt');
+						warn.removeClass('warnHide').addClass('warnShow');
+						success.html('Message Sent!').fadeOut(2000);
+
 					}
 	
 		  		}
@@ -81,7 +93,7 @@ $(function(){
 		})
 
 	
-	}
+		}
 			
 	e.preventDefault();
 	})	
@@ -96,9 +108,13 @@ $(function(){
 		else
 		
 		{
-			if(warn.hasClass('warnShow')){
-				warn.removeClass('warnShow').addClass('warnHide');
+			if(warn.hasClass('warnShow'))
+			{
+				
+				warn.removeClass('warnFnt').addClass('succFnt');
+				success.html('Message Sent!').fadeOut(2000);
 			}
+			
 			$.ajax({
 				type:"GET",
 		  		url: baseUrl+"details/emailSend",
@@ -110,6 +126,11 @@ $(function(){
 						contactBorder.removeClass('bottContact');
 						workBorder.addClass('bott');
 						myContact.slideUp('slow').removeClass('contactShow').addClass('contactHide');	
+						success.empty();
+						warn.removeClass('warnFnt').addClass('succFnt');
+						warn.removeClass('warnHide').addClass('warnShow');
+						success.html('Message Sent!').fadeOut(2000);
+
 					}
 	
 		  		}

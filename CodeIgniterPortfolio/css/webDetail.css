@@ -394,6 +394,12 @@ letter-spacing: 1px;
 color: red;
 }
 
+.succFnt{
+font: bold 16px Myriad Pro;
+letter-spacing: 1px;
+color: green;
+}
+
 /*_______________________ GENERALY USED ITEMS __________________ */
 .anc{
 text-decoration:none;
