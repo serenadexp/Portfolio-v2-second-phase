@@ -357,7 +357,24 @@ letter-spacing: 1px;
 font: bold 24px openSansBld;
 color: black;
 letter-spacing: 1px;
+}
 
+@-moz-document url-prefix() {
+
+.currentSkillsFnt{
+	font: bold 23px openSansBld;
+	color: black;
+	letter-spacing: 1px;
+	}
+}
+
+@-moz-document url-prefix() {
+
+.quoteFnt{
+	font: bold 36px openSansSemi;
+	color: black;
+	letter-spacing: 1px;
+	}
 }
 
 .skillColHeadFnt{
