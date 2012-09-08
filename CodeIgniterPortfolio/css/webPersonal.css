@@ -297,6 +297,10 @@ clear: both;
 border-top:5px solid #AFAEAE;
 opacity:.5;
 }
+
+#footer p{
+margin-bottom:10px;
+}
 /*_______________________ FONTS __________________ */
 
 @font-face{

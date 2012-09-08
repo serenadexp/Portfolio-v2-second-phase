@@ -37,7 +37,7 @@
 					<ul id="nav">
 						<li id="ancWork" class="bott"><?php echo anchor('home','My Work',array('class'=>"anc navFnt navWork",'alt'=>'My Work','title'=>'My Work')) ?></li>
 						<li id="ancPersonal"><?php echo anchor('personal','Personal',array('class'=>"anc navFnt navPers",'alt'=>'Personal','title'=>'Personal')) ?></li>
-						<li id="ancContact"><a class="anc navFnt navCont" title="Contact" alt="Contact" href="">Contact</a></li>
+						<li id="ancContact"><a class="anc navFnt navCont" title="Contact" alt="Contact" href="#">Contact</a></li>
 					</ul>
 				</div><!-- closed navHolder -->
 			</div><!-- closed header -->
@@ -109,7 +109,7 @@
 			<div id="footer">
 				<div id="footTop"></div><!-- closed footTop -->
 
-					<p class="footFnt txtInd">Copyright &copy; Andre Allen 2012</p>
+					<p title="Andre Allen Web Developer and Design" class="footFnt txtInd">Copyright &copy; Andre Allen 2012</p>
 			</div><!-- closed footer -->	
 		</div><!-- closed wrapper -->
 		<script type="text/javascript" src="../../js/jquery-1.7.2.min.js"></script>

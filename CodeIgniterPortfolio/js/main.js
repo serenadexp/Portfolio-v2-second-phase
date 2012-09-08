@@ -67,8 +67,12 @@ $(function(){
 				projectTech.empty();
 				projectName.html("Project: "+data[0].project_Name+"");
 				projectSub.html(""+data[0].sub_Info+"");
-				projectTech.html("<li><img src="+data[0].project_Tech_1+"></li><li><img src="+data[0].project_Tech_2+"></li><li><img src="+data[0].project_Tech_3+"></li><li><img src="+data[0].project_Tech_4+"></li><li><img src="+data[0].project_Tech_5+"></li><li><img src="+data[0].project_Tech_6+"></li>");
-				ancRel.attr('href','details/index/'+projectNum+'');
+				for(var i=0; i<data.length; i++)
+	  				{
+	  					console.log(data[i].img_Names)
+	  					projectTech.append("<li><img src="+data[i].used_Tech+" title="+data[i].img_Names+" alt="+data[i].img_Names+ "></li>");		
+	  				}
+					ancRel.attr('href','details/index/'+projectNum+'');
 /* 			ancRel.attr('rel',projectNum); */
 	  		}
 
@@ -104,7 +108,11 @@ $(function(){
 				projectTech.empty();
 				projectName.html("Project: "+data[0].project_Name+"");
 				projectSub.html(""+data[0].sub_Info+"");
-				projectTech.html("<li><img src="+data[0].project_Tech_1+"></li><li><img src="+data[0].project_Tech_2+"></li>");
+				for(var i=0; i<data.length; i++)
+	  				{
+	  					console.log(data[i].used_Tech)
+	  					projectTech.append("<li><img title="+data[i].img_Names+" alt="+data[i].img_Names+" src="+data[i].used_Tech+"></li>");		
+	  				}
 				ancRel.attr('href','details/index/'+projectNum+'');
 /* 				ancRel.attr('rel',projectNum); */
 	  		}
@@ -142,8 +150,12 @@ $(function(){
 				projectTech.empty();
 				projectName.html("Project: "+data[0].project_Name+"");
 				projectSub.html(""+data[0].sub_Info+"");
-				projectTech.html("<li><img src="+data[0].project_Tech_1+"></li><li><img src="+data[0].project_Tech_2+"></li><li><img src="+data[0].project_Tech_3+"></li><li><img src="+data[0].project_Tech_4+"></li><li><img src="+data[0].project_Tech_5+"></li>");
-				ancRel.attr('href','details/index/'+projectNum+'');
+				for(var i=0; i<data.length; i++)
+	  				{
+	  					console.log(data[i].used_Tech)
+	  					projectTech.append("<li><img title="+data[i].img_Names+" alt="+data[i].img_Names+" src="+data[i].used_Tech+"></li>");		
+	  				}
+								ancRel.attr('href','details/index/'+projectNum+'');
 				/* ancRel.attr('rel',projectNum); */
 	  		}
 
@@ -178,7 +190,12 @@ $(function(){
 				projectTech.empty();
 				projectName.html("Project: "+data[0].project_Name+"");
 				projectSub.html(""+data[0].sub_Info+"");
-				projectTech.html("<li><img src="+data[0].project_Tech_1+"></li><li><img src="+data[0].project_Tech_2+"></li><li><img src="+data[0].project_Tech_3+"></li><li><img src="+data[0].project_Tech_4+"></li><li><img src="+data[0].project_Tech_5+"></li><li><img src="+data[0].project_Tech_6+"></li>");	
+				for(var i=0; i<data.length; i++)
+	  				{
+	  					console.log(data[i].used_Tech)
+	  					projectTech.append("<li><img title="+data[i].img_Names+" alt="+data[i].img_Names+" src="+data[i].used_Tech+"></li>");		
+	  				}
+				
 				
 				ancRel.attr('href','details/index/'+projectNum+'');
 				// NOT USING THE REL LIKE HOW I THOUGHT I WOULD LIKE PULL THE REL NUM AND SEND IT TO THE CONTROLLER FROM THE ANCHOR ancRel.attr('rel',projectNum);

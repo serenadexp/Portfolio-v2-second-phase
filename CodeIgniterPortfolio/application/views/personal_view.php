@@ -34,9 +34,9 @@
 				</div><!-- closed homeReturn -->
 				<div id="navHolder">
 					<ul id="nav">
-						<li id="ancWork"><?php echo anchor('home','My Work','class="anc navFnt navWork"') ?></li>
-						<li id="ancPersonal" class="bott"><a class="anc navFnt navPers" href="">Personal</a></li>
-						<li id="ancContact"><a class="anc navFnt navCont" href="">Contact</a></li>
+						<li id="ancWork"><?php echo anchor('home','My Work',array('class'=>"anc navFnt navWork",'alt'=>'My Work','title'=>'My Work')) ?></li>
+						<li id="ancPersonal" class="bott"><a title="Personal" alt='Personal' class="anc navFnt navPers" href="">Personal</a></li>
+						<li id="ancContact"><a title="Contact" alt='Contact' class="anc navFnt navCont" href="#">Contact</a></li>
 					</ul>
 				</div><!-- closed navHolder -->
 			</div><!-- closed header -->
@@ -121,7 +121,7 @@ Code Igniter framework and OOP.</p>
 			<div id="footer">
 				<div id="footTop"></div><!-- closed footTop -->
 
-					<p class="footFnt txtInd">Copyright &copy; Andre Allen 2012</p>
+					<p title="Andre Allen Web Developer and Design" class="footFnt txtInd">Copyright &copy; Andre Allen 2012</p>
 			</div><!-- closed footer -->	
 		</div><!-- closed wrapper -->
 	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>

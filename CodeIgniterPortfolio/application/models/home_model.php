@@ -18,14 +18,13 @@ class Home_model extends CI_Controller {
 		
 
 		$query=$this->db->query("
-			SELECT project_Name,sub_Info,project_Tech_1,project_Tech_2,project_Tech_3,project_Tech_4,project_Tech_5,project_Tech_6
+			SELECT DISTINCT project_Name,sub_Info,used_Tech,img_Names
 			FROM projects 
 			JOIN projectSubInfo
 			on projectSubInfo.project_Sub_Id = projects.project_Sub_Id
-			JOIN projectTechnology
-			on projectTechnology.project_Tech_Id =projects.project_Tech_Id
-			WHERE project_Id=1;
-
+			JOIN projectTechnologyUsed
+			on projectTechnologyUsed.assign_Tech_Num =projects.project_Tech_Id
+			WHERE project_Id=1 AND assign_Tech_Num =1 LIMIT 6;
 			");
 
 		return $query;
@@ -36,14 +35,13 @@ class Home_model extends CI_Controller {
 	{
 
 		$query=$this->db->query("
-			SELECT project_Name,sub_Info,project_Tech_1,project_Tech_2,project_Tech_3,project_Tech_4,project_Tech_5,project_Tech_6
+			SELECT DISTINCT project_Name,sub_Info,used_Tech,img_Names
 			FROM projects 
 			JOIN projectSubInfo
 			on projectSubInfo.project_Sub_Id = projects.project_Sub_Id
-			JOIN projectTechnology
-			on projectTechnology.project_Tech_Id =projects.project_Tech_Id
-			WHERE project_Id='$numRel';
-
+			JOIN projectTechnologyUsed
+			on projectTechnologyUsed.assign_Tech_Num =projects.project_Tech_Id
+			WHERE project_Id=$numRel AND assign_Tech_Num =$numRel LIMIT 6;
 			");
 
 		return $query->result_object();

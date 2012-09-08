@@ -37,9 +37,9 @@
 				</div><!-- closed homeReturn -->
 				<div id="navHolder">
 					<ul id="nav">
-						<li id="ancWork" class="bott"><?php echo anchor('home','My Work','class="anc navFnt navWork"') ?></li>
-						<li id="ancPersonal"><?php echo anchor('personal','Personal','class="anc navFnt navPers"') ?></li>
-						<li id="ancContact"><a class="anc navFnt navCont" href="">Contact</a></li>
+						<li id="ancWork" class="bott"><?php echo anchor('home','My Work',array('class'=>"anc navFnt navWork",'alt'=>'My Work','title'=>'My Work')) ?></li>
+						<li id="ancPersonal"><?php echo anchor('personal','Personal',array('class'=>"anc navFnt navPers",'alt'=>'Personal','title'=>'Personal')) ?></li>
+						<li id="ancContact"><a class="anc navFnt navCont" title="Contact" alt="Contact" href="#">Contact</a></li>
 					</ul>
 				</div><!-- closed navHolder -->
 			</div><!-- closed header -->
@@ -74,12 +74,6 @@
 					 <?php foreach($inPulls->result() as $pulls):
 						$projectName=$pulls->project_Name;
 						$projectSubInfo=$pulls->sub_Info;
-						$projectSubTech1=$pulls->project_Tech_1;
-						$projectSubTech2=$pulls->project_Tech_2;
-						$projectSubTech3=$pulls->project_Tech_3;
-						$projectSubTech4=$pulls->project_Tech_4;
-						$projectSubTech5=$pulls->project_Tech_5;
-						$projectSubTech6=$pulls->project_Tech_6;
 					?>	
 					<?php endforeach;?>
 				<div id="trans"></div><!--closed trans -->
@@ -96,12 +90,12 @@
 				</div>	<!--closed contentProjectTechno -->
 				<div id="contentTechDetail">
 					<ul id="techLogos">
-						<li><img src="<?php echo $projectSubTech1; ?>"/></li>
-						<li><img src="<?php echo $projectSubTech2; ?>"/></li>
-						<li><img src="<?php echo $projectSubTech3; ?>"/></li>
-						<li><img src="<?php echo $projectSubTech4; ?>"/></li>
-						<li><img src="<?php echo $projectSubTech5; ?>"/></li>
-						<li><img src="<?php echo $projectSubTech6; ?>"/></li>
+					<?php foreach($inPulls->result() as $pullT):
+							$projectSubTech=$pullT->used_Tech;
+							$projectSubTechTitle=$pullT->img_Names;
+					?>
+						<li><img title="<?php echo $projectSubTechTitle;?>" src="<?php echo $projectSubTech; ?>"/></li>
+					<?php endforeach;?>
 					</ul>	
 				</div>	<!--closed contentTechDetail -->
 				<div id="contentMoreDetail">
@@ -113,15 +107,15 @@
 				<div class="transTxt"></div>
 					<div id="firstContent" class="contentsProjectBorder contentsProjectBorderLight">
 						<a id="projectOne" href="#" rel="1" class="anc">
-							<img class="imgBlock imgBorder" src="img/exban.jpg"/>
+							<img class="imgBlock imgBorder" src="img/exban.jpg" alt="Exercise 7" title="Exercise 7"/>
 								<p class="contentProjectsFnt "><span>Exercise 7</span></p>
 						</a>
 					</div><!-- closed firstContent -->
 					<div class="transTxt"></div>
 					<div id="secondContent" class="contentsProjectBorder">
 						<a id="projectTwo" href="#" rel="3" class="anc">
-							<img class="imgBlock imgBorder" src="img/afroban.jpg"/>
-								<p class="contentProjectsFnt">Logos</p>
+							<img class="imgBlock imgBorder" src="img/afroban.jpg" alt="Logo Designs" title="Logo Designs"/>
+								<p class="contentProjectsFnt">Logo Designs</p>
 						</a>	
 					</div>	<!-- closed secondContent -->
 				</div><!-- closed contentProjectRight -->
@@ -129,14 +123,14 @@
 				<div class="transTxt"></div>
 					<div id="thirdContent" class="contentsProjectBorder">
 						<a id="projectThree" href="#" rel="2" class="anc">
-							<img class="imgBlock imgBorder" src="img/lookban.jpg"/>
+							<img class="imgBlock imgBorder" src="img/lookban.jpg" alt="Looker App" title="Looker App"/>
 							<p class="contentProjectsFnt txtInd"><span>Looker</span></p>
 						</a>	
 					</div><!-- closed thirdContent -->
 					<div class="transTxt"></div>
 					<div id="fourthContent" class="contentsProjectBorder">
 						<a id="projectFour" href="#" rel="4" class="anc">
-							<img class="imgBlock imgBorder" src="img/casban.jpg"/>
+							<img class="imgBlock imgBorder" src="img/casban.jpg" alt="CAS" title="CAS"/>
 								<p class="contentProjectsFnt txtInd">CAS</p>
 						</a>		
 					</div>	<!-- closed fourthContent -->
