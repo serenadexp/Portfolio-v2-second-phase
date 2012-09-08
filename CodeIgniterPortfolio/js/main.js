@@ -21,12 +21,14 @@ $(function(){
 	var ancRel=$('#contentMoreDetail p a');
 	
 /* CONTACT */
-var first=$('#firstLast');
-var email=$('#email');
-var subject=$('#subject');
-var send=$('#sendBtn');	
-var message=$('#message');
-var warn=$('#warn');
+	var first=$('#firstLast');
+	var email=$('#email');
+	var subject=$('#subject');
+	var send=$('#sendBtn');	
+	var sendBtnDetail=$('#sendDetailBtn');
+	var message=$('#message');
+	var warn=$('#warn');
+	
 	$('.navCont').click(function(e)
 	{
 
@@ -50,42 +52,80 @@ var warn=$('#warn');
 	
 	send.click(function(e){
 	
-	if(first.val()==''||email.val()==''||subject.val()==''||message.val()=='')
-	{
-		warn.removeClass('warnHide').addClass('warnShow');
-	}
-	else
-	
-	{
-		if(warn.hasClass('warnShow')){
-			warn.removeClass('warnShow').addClass('warnHide');
+		if(first.val()==''||email.val()==''||subject.val()==''||message.val()=='')
+		{
+			warn.removeClass('warnHide').addClass('warnShow');
 		}
-		$.ajax({
-			type:"GET",
-	  		url: baseUrl+"home/emailSend",
-	  		data:{firstLast:first.val(),email:email.val(),subject:subject.val(),message:message.val()},
-	  		success:function(data){
-	  		console.log(data);
-				if(myContact.hasClass('contactShow'))
-				{
-					contactBorder.removeClass('bottContact');
-					workBorder.addClass('bott');
-					myContact.slideUp('slow').removeClass('contactShow').addClass('contactHide');	
-				}
-
-	  		}
-
+		else
+		
+		{
+			if(warn.hasClass('warnShow')){
+				warn.removeClass('warnShow').addClass('warnHide');
+			}
+			$.ajax({
+				type:"GET",
+		  		url: baseUrl+"home/emailSend",
+		  		data:{firstLast:first.val(),email:email.val(),subject:subject.val(),message:message.val()},
+		  		success:function(data){
+		  		console.log(data);
+					if(myContact.hasClass('contactShow'))
+					{
+						contactBorder.removeClass('bottContact');
+						workBorder.addClass('bott');
+						myContact.slideUp('slow').removeClass('contactShow').addClass('contactHide');	
+					}
 	
-	})
+		  		}
+	
+		
+		})
 
-	
-	
 	
 	}
+			
+	e.preventDefault();
+	})	
+
+/* NOTE THIS AJAX CLICK FUNCTION IS FOR THE DETAIL VIEW */	
+	sendBtnDetail.click(function(e){
+	
+		if(first.val()==''||email.val()==''||subject.val()==''||message.val()=='')
+		{
+			warn.removeClass('warnHide').addClass('warnShow');
+		}
+		else
 		
+		{
+			if(warn.hasClass('warnShow')){
+				warn.removeClass('warnShow').addClass('warnHide');
+			}
+			$.ajax({
+				type:"GET",
+		  		url: baseUrl+"details/emailSend",
+		  		data:{firstLast:first.val(),email:email.val(),subject:subject.val(),message:message.val()},
+		  		success:function(data){
+		  		console.log(data);
+					if(myContact.hasClass('contactShow'))
+					{
+						contactBorder.removeClass('bottContact');
+						workBorder.addClass('bott');
+						myContact.slideUp('slow').removeClass('contactShow').addClass('contactHide');	
+					}
+	
+		  		}
+	
+		
+		})
+	
+		
+		
+		
+		}
+			
 	
 	e.preventDefault();
 	})	
+
 
 
 	project_One.click(function(e)

@@ -197,6 +197,9 @@ color: ;
 color: ;
 }
 
+#warn{
+float: left;
+}
 
 /*_______________________ PERSONAL QUOTE ____________________ */
 #personalQuote{

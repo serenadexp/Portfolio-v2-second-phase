@@ -13,26 +13,27 @@
 			<p class="contactHeadFnt">Interested At Reaching Out To Me</p>
 		</div><!-- closed headContact -->
 		<div id="titlesContact">
-			<form action="" method="post">
+			<form id="contactForm">
 				<input class="inputStyle inputFnt inputColor" id="firstLast" type="text" name="firstLast" placeholder="Your First & Last Name"/>
 				<input class="inputStyle inputFnt inputColor" id="email" type="text" name="email" placeholder="Your Email"/>
 				<input class="inputStyle inputFnt inputColor" id="subject" type="text" name="subject" placeholder="Subject Title"/>
 			
 		</div><!-- closed titlesContact -->
 		<div id="messageContact">
-				<textarea class="inputFnt inputColor" id="subject" type="text" name="message" placeholder="Place Message Here"></textarea> 
+				<textarea class="inputFnt inputColor" id="message" type="text" name="message" placeholder="Place Message Here"></textarea>
 
 				<button class="sendBtnFnt sendBtnStyle" id="sendBtn" type="submit">Send</button>
 			</form><!-- closed form -->
 		</div><!-- closed messageContact -->
 	</div><!-- closed contact -->
 	
+	
 
 		<div id="wrapper">
 			<div id="header">
 				<div id="homeReturn"><p title="Andre Allen Web Developer and Designer" class="txtInd"><?php echo anchor('home','Andre Allen</br>Web Developer & Designer','class="anc nameFnt"')?></p>
 				</div><!-- closed homeReturn -->
-				<div id="navHolder">
+				<div id="navHolder"><div class="warnHide warnFnt" id="warn"><p>Please Fill Out All Fields</p></div><!-- closed warn -->
 					<ul id="nav">
 						<li id="ancWork"><?php echo anchor('home','My Work',array('class'=>"anc navFnt navWork",'alt'=>'My Work','title'=>'My Work')) ?></li>
 						<li id="ancPersonal" class="bott"><a title="Personal" alt='Personal' class="anc navFnt navPers" href="">Personal</a></li>
@@ -125,7 +126,11 @@ Code Igniter framework and OOP.</p>
 			</div><!-- closed footer -->	
 		</div><!-- closed wrapper -->
 	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
-	<script type="text/javascript" src="js/jquery.lightbox_me.js"></script>
+	<script type="text/javascript" >
+	var baseUrl= "<?php echo(base_url()); ?>";
+	
+
+	</script>
 	<script type="text/javascript" src="js/mainPersonal.js"></script>
 	</body>
 </html>

@@ -24,7 +24,7 @@
 		<div id="messageContact">
 				<textarea class="inputFnt inputColor" id="subject" type="text" name="message" placeholder="Place Message Here"></textarea>
 
-				<button class="sendBtnFnt sendBtnStyle" id="sendBtn" type="submit">Send</button>
+				<button class="sendBtnFnt sendBtnStyle" id="sendDetailBtn" type="submit">Send</button>
 			</form><!-- closed form -->
 		</div><!-- closed messageContact -->
 	</div><!-- closed contact -->
@@ -33,7 +33,7 @@
 			<div id="header">
 				<div id="homeReturn"><h1 title="Andre Allen Web Developer and Designer" class="txtInd"><?php echo anchor('home','Andre Allen</br>Web Developer & Designer','class="anc nameFnt"')?></h1>
 				</div><!-- closed homeReturn -->
-				<div id="navHolder">
+				<div id="navHolder"><div class="warnHide warnFnt" id="warn"><p>Please Fill Out All Fields</p></div><!-- closed warn -->
 					<ul id="nav">
 						<li id="ancWork" class="bott"><?php echo anchor('home','My Work',array('class'=>"anc navFnt navWork",'alt'=>'My Work','title'=>'My Work')) ?></li>
 						<li id="ancPersonal"><?php echo anchor('personal','Personal',array('class'=>"anc navFnt navPers",'alt'=>'Personal','title'=>'Personal')) ?></li>
@@ -115,6 +115,12 @@
 		<script type="text/javascript" src="../../js/jquery-1.7.2.min.js"></script>
 		<script src="../../js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript" src="../../js/main.js"></script>
+		<script type="text/javascript" >
+			var baseUrl= "<?php echo(base_url()); ?>";
+	
+
+		</script>
+
 
 		<script type="text/javascript" charset="utf-8">
  			 $(document).ready(function(){

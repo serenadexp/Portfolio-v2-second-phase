@@ -66,7 +66,7 @@ padding-left: 10px;
 padding-top: 5px;
 }
 
-#sendBtn{
+#sendDetailBtn{
 float: left;
 margin-left: 52px;
 margin-top: 10px;
@@ -79,7 +79,7 @@ cursor: pointer;
 
 @-moz-document url-prefix() {
 
-#sendBtn{
+#sendDetailBtn{
 float: left;
 margin-left: 48px;
 margin-top: 10px;
@@ -196,6 +196,9 @@ color: ;
 color: ;
 }
 
+#warn{
+float: left;
+}
 
 /*_______________________ PROJECT NAME ____________________ */
 #projectName{

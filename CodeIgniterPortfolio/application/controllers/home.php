@@ -10,7 +10,6 @@ class Home extends CI_Controller {
 		parent::__construct();
 		$this->load->library('email');
 		$this->load->helper(array('url','form'));
-		//$this->load->library('email',$config);
 		$this->load->model("home_model");
 		
 

@@ -36,7 +36,7 @@
 				<div id="homeReturn"><p class="txtInd"><?php echo anchor('home','Andre Allen</br>Web Developer & Designer','class="anc nameFnt"')?></p>
 				
 				</div><!-- closed homeReturn -->
-				<div id="navHolder"><div class="warnHide warnFnt" id="warn"><p>Please Fill Out All Fields</p></div>
+				<div id="navHolder"><div class="warnHide warnFnt" id="warn"><p>Please Fill Out All Fields</p></div><!-- closed warn -->
 					<ul id="nav">
 						<li id="ancWork" class="bott"><?php echo anchor('home','My Work',array('class'=>"anc navFnt navWork",'alt'=>'My Work','title'=>'My Work')) ?></li>
 						<li id="ancPersonal"><?php echo anchor('personal','Personal',array('class'=>"anc navFnt navPers",'alt'=>'Personal','title'=>'Personal')) ?></li>
