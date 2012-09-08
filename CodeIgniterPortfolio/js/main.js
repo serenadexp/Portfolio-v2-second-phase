@@ -26,6 +26,7 @@ var email=$('#email');
 var subject=$('#subject');
 var send=$('#sendBtn');	
 var message=$('#message');
+var warn=$('#warn');
 	$('.navCont').click(function(e)
 	{
 
@@ -51,11 +52,14 @@ var message=$('#message');
 	
 	if(first.val()==''||email.val()==''||subject.val()==''||message.val()=='')
 	{
-		alert('empty')
+		warn.removeClass('warnHide').addClass('warnShow');
 	}
 	else
 	
 	{
+		if(warn.hasClass('warnShow')){
+			warn.removeClass('warnShow').addClass('warnHide');
+		}
 		$.ajax({
 			type:"GET",
 	  		url: baseUrl+"home/emailSend",

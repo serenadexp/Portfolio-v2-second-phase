@@ -120,6 +120,10 @@ background-color:white ;
 float: left;
 }
 
+#warn{
+float: left;
+}
+
 #homeReturn{
 border-bottom:10px solid #AA2D48;
 margin-top: 15px;
@@ -131,11 +135,22 @@ margin-right:18px;
 #navHolder{
 float: left;
 height: 50px;
+margin-top: 2px;
 }
+@-moz-document url-prefix() {
+	#navHolder{
+	float: left;
+	height: 50px;
+	margin-top:0px;
+	}
+}
+
+
 
 #nav li{
 float: left;
 padding-top:4px ;
+
 }
 
 #nav{
@@ -214,7 +229,6 @@ margin-left: 20px;
 
 /*_______________________ CONTENT PROJECT INFO ____________________ */
 #contentProjectInfo{
-/* border:1px solid black; */
 float: left;
 clear: both;
 width: 340px;
@@ -269,7 +283,6 @@ margin-top: 5px;
 #contentMoreDetail{
 float: left;
 margin-left:200px;
-/* margin-top: 145px; */
 }
 
 
@@ -294,7 +307,6 @@ margin-right:20px;
 padding-bottom:20px;
 padding-left: 10px;
 padding-top: 20px;
-/* background:url('../img/test.png'); */
 }
 
 .transTxt{
@@ -305,7 +317,6 @@ opacity: 0.1;
 width:281px;
 height: 210px;
 position:absolute;
-
 z-index:-9;
 }
 
@@ -422,6 +433,12 @@ font: bold 22px Myriad Pro;
 letter-spacing: 1px;
 color: #3A3A3A;
 }
+
+.warnFnt{
+font: bold 16px Myriad Pro;
+letter-spacing: 1px;
+color: red;
+}
 /*_______________________ GENERALY USED ITEMS __________________ */
 .anc{
 text-decoration:none;
@@ -435,6 +452,13 @@ margin-left:10px;
 display: none;
 }
 
+.warnShow{
+display: block;
+}
+
+.warnHide{
+display: none;
+}
 .contactShow{
 display: block;
 }

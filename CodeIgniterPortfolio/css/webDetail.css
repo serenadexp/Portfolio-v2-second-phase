@@ -132,6 +132,15 @@ margin-right:18px;
 #navHolder{
 float: left;
 height: 50px;
+margin-top: 2px;
+}
+
+@-moz-document url-prefix() {
+	#navHolder{
+	float: left;
+	height: 50px;
+	margin-top:0px;
+	}
 }
 
 #nav li{
@@ -376,6 +385,12 @@ letter-spacing: 1px;
 color: #3A3A3A;
 }
 
+.warnFnt{
+font: bold 16px Myriad Pro;
+letter-spacing: 1px;
+color: red;
+}
+
 /*_______________________ GENERALY USED ITEMS __________________ */
 .anc{
 text-decoration:none;
@@ -387,6 +402,14 @@ margin-left:10px;
 
 .txtIndAgain{
 margin-left:20px;
+}
+
+.warnShow{
+display: block;
+}
+
+.warnHide{
+display: none;
 }
 
 .contactHide{
