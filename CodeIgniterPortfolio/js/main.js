@@ -19,6 +19,13 @@ $(function(){
 	var projectSub=$('#contentProjectInfoDetail p');
 	var projectTech=$('#contentTechDetail ul');
 	var ancRel=$('#contentMoreDetail p a');
+	
+/* CONTACT */
+var first=$('#firstLast');
+var email=$('#email');
+var subject=$('#subject');
+var send=$('#sendBtn');	
+var message=$('#message');
 	$('.navCont').click(function(e)
 	{
 
@@ -36,6 +43,42 @@ $(function(){
 			workBorder.addClass('bott');
 			myContact.slideUp('slow').removeClass('contactShow').addClass('contactHide');	
 		}
+	
+	e.preventDefault();
+	})	
+	
+	send.click(function(e){
+	
+	if(first.val()==''||email.val()==''||subject.val()==''||message.val()=='')
+	{
+		alert('empty')
+	}
+	else
+	
+	{
+		$.ajax({
+			type:"GET",
+	  		url: baseUrl+"home/emailSend",
+	  		data:{firstLast:first.val(),email:email.val(),subject:subject.val(),message:message.val()},
+	  		success:function(data){
+	  		console.log(data);
+				if(myContact.hasClass('contactShow'))
+				{
+					contactBorder.removeClass('bottContact');
+					workBorder.addClass('bott');
+					myContact.slideUp('slow').removeClass('contactShow').addClass('contactHide');	
+				}
+
+	  		}
+
+	
+	})
+
+	
+	
+	
+	}
+		
 	
 	e.preventDefault();
 	})	
@@ -208,6 +251,7 @@ $(function(){
 		
 	e.preventDefault();
 	});	
+
 
 
 

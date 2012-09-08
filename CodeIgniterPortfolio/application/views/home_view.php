@@ -15,14 +15,14 @@
 			<p class="contactHeadFnt">Interested At Reaching Out To Me</p>
 		</div><!-- closed headContact -->
 		<div id="titlesContact">
-			<form action="home/emailSend" method="">
+			<form id="contactForm">
 				<input class="inputStyle inputFnt inputColor" id="firstLast" type="text" name="firstLast" placeholder="Your First & Last Name"/>
 				<input class="inputStyle inputFnt inputColor" id="email" type="text" name="email" placeholder="Your Email"/>
 				<input class="inputStyle inputFnt inputColor" id="subject" type="text" name="subject" placeholder="Subject Title"/>
 			
 		</div><!-- closed titlesContact -->
 		<div id="messageContact">
-				<textarea class="inputFnt inputColor" id="subject" type="text" name="message" placeholder="Place Message Here"></textarea>
+				<textarea class="inputFnt inputColor" id="message" type="text" name="message" placeholder="Place Message Here"></textarea>
 
 				<button class="sendBtnFnt sendBtnStyle" id="sendBtn" type="submit">Send</button>
 			</form><!-- closed form -->

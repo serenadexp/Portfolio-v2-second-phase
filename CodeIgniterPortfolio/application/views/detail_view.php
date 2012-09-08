@@ -22,7 +22,7 @@
 			
 		</div><!-- closed titlesContact -->
 		<div id="messageContact">
-				<input class="inputFnt inputColor" id="subject" type="text" name="message" placeholder="Place Message Here"/>
+				<textarea class="inputFnt inputColor" id="subject" type="text" name="message" placeholder="Place Message Here"></textarea>
 
 				<button class="sendBtnFnt sendBtnStyle" id="sendBtn" type="submit">Send</button>
 			</form><!-- closed form -->

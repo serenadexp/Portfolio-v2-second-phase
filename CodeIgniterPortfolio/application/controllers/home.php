@@ -55,7 +55,7 @@ class Home extends CI_Controller {
 		$this->email->from('zero15xx@aol.com');
 		$this->email->to('katosourai@gmail.com');
 		$this->email->subject($subject);
-		$this->email->message($message.' This Is The Senders Email Address: '.$email);
+		$this->email->message('This Is The Senders Name: '.$name.' The Message: '.$message.' This Is The Senders Email Address: '.$email);
 		$this->email->send();
 		
 		var_dump($this->email->print_debugger());

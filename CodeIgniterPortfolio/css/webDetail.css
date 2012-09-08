@@ -19,9 +19,16 @@ float: none;
 #contact{
 height:240px;
 background-color:#937EBF ;
+
 }
 
+@-moz-document url-prefix() {
+#contact{
+height:260px;
+background-color:#937EBF ;
 
+}
+}
 #headContact{
 float: left;
 margin-left:230px;
@@ -47,17 +54,30 @@ margin-left: 20px;
 width: 300px;
 }
 
-#messageContact input{
+#messageContact textarea{
 padding-bottom:90px;
 -moz-border-radius: 2px;
 border-radius: 2px;
 border: 2px solid white;
 width: 280px;
+resize:none;
 float: left;
 padding-left: 10px;
 padding-top: 5px;
-
 }
+
+#sendBtn{
+float: left;
+margin-left: 52px;
+margin-top: 10px;
+padding-left:85px;
+padding-bottom: 2px;
+padding-top: 4px;
+padding-right:85px;
+cursor: pointer;
+}
+
+@-moz-document url-prefix() {
 
 #sendBtn{
 float: left;
@@ -68,10 +88,9 @@ padding-bottom: 2px;
 padding-top: 4px;
 padding-right:85px;
 cursor: pointer;
-
 }
 
-
+}
 
 .inputStyle{
 border: 2px solid white;
@@ -94,6 +113,7 @@ background-color:#E8E8E8 ;
 .inputColorHighLight{
 background-color:white ;
 }
+
 
 
 /*_______________________ HEADER ____________________ */
