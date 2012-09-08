@@ -15,14 +15,14 @@
 			<p class="contactHeadFnt">Interested At Reaching Out To Me</p>
 		</div><!-- closed headContact -->
 		<div id="titlesContact">
-			<form action="home/emailSend" method="get">
+			<form action="home/emailSend" method="">
 				<input class="inputStyle inputFnt inputColor" id="firstLast" type="text" name="firstLast" placeholder="Your First & Last Name"/>
 				<input class="inputStyle inputFnt inputColor" id="email" type="text" name="email" placeholder="Your Email"/>
 				<input class="inputStyle inputFnt inputColor" id="subject" type="text" name="subject" placeholder="Subject Title"/>
 			
 		</div><!-- closed titlesContact -->
 		<div id="messageContact">
-				<input class="inputFnt inputColor" id="subject" type="text" name="message" placeholder="Place Message Here"/>
+				<textarea class="inputFnt inputColor" id="subject" type="text" name="message" placeholder="Place Message Here"></textarea>
 
 				<button class="sendBtnFnt sendBtnStyle" id="sendBtn" type="submit">Send</button>
 			</form><!-- closed form -->
@@ -44,7 +44,7 @@
 				</div><!-- closed navHolder -->
 			</div><!-- closed header -->
 			<div id="contentIntro">
-				<p class="introducFnt txtInd">I’m Andre Allen</br> a guy who’s obsessed with all things web and strives to see technology pushed to the cutting edge.</p>
+				<h1 class="introducFnt txtInd">I’m Andre Allen</br> a guy who’s obsessed with all things web and strives to see technology pushed to the cutting edge.</h1>
 			
 			</div><!--closed contentIntro -->
 			<div id="contentSlider">

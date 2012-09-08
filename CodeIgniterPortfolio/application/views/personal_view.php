@@ -42,13 +42,13 @@
 			</div><!-- closed header -->
 			<div id="personalQuote">
 				<div id="quoteHolder">
-					<p class="quoteFnt">
+					<h1 class="quoteFnt">
 					<span>“</span><br/>
 					<span class="moveLoyalty">Loyalty</span><br/>
 					<span class="moveHonesty">Honesty</span><br/>
 					<span class="moveRespect">& Respect</span><br/>
 					<span class="moveQuote">’’</span>
-					</p>
+					</h1>
 				</div><!--closed quoteHolder -->
 			</div><!--closed personalQuote -->
 			<div id="personalDetails">

@@ -9,7 +9,7 @@ class Email extends CI_Controller {
 	{
 		parent::__construct();
 
-$this->load->library('email');
+
 		/* always put constructs in ur php files it allows you to gain access on a global level and imports the file you want so the document has access to it */
 	}
 
@@ -17,11 +17,22 @@ $this->load->library('email');
 	public function index()
 	{	
 
-		
-		
+			
 
-		$this->load->library('email');
-		$this->email->from('zero15xx@aol.com');
+		$config = Array(
+
+				'protocol'=>'smtp',
+				'smtp_host'=>'smtp.gmail.com',
+				'smtp_port'=>587,
+				'smtp_user'=>'katosourai@gmail.com',
+				'smtp_pass'=>'destiny15'
+
+			);
+		$this->load->library('email',$config);
+		$this->email->initialize($config);
+
+		// $this->load->library('email',$config);
+		$this->email->from('katosourai@gmail.com');
 		$this->email->to('katosourai@gmail.com');
 		$this->email->subject('hi tester');
 		$this->email->message('go andre');

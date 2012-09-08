@@ -31,7 +31,7 @@
 	
 		<div id="wrapper">
 			<div id="header">
-				<div id="homeReturn"><p title="Andre Allen Web Developer and Designer" class="txtInd"><?php echo anchor('home','Andre Allen</br>Web Developer & Designer','class="anc nameFnt"')?></p>
+				<div id="homeReturn"><h1 title="Andre Allen Web Developer and Designer" class="txtInd"><?php echo anchor('home','Andre Allen</br>Web Developer & Designer','class="anc nameFnt"')?></h1>
 				</div><!-- closed homeReturn -->
 				<div id="navHolder">
 					<ul id="nav">
