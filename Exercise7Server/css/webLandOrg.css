@@ -1,0 +1,252 @@
+* {
+margin: 0;
+padding: 0;
+outline: none;
+}
+
+body{background: url('../img/brillant.png');
+
+}
+/* -----------------------HEADER ITMS -------------------------------------*/
+#logo{
+display: block;
+float: left;
+margin-top:20px;
+margin-bottom:25px;
+}
+
+#head{
+width:960px;
+margin: 0 auto;
+
+}
+
+#headerLanding{
+width:100%;
+float: left;
+background-color: #9CC653;
+margin-bottom:30px; 
+
+}
+
+#nav{
+float:right;
+margin-top:30px;
+}
+
+#nav li{
+float: left;
+margin-left:70px;
+}
+
+#nav li a{
+text-decoration: none;
+margin-left:10px;
+}
+
+#nav li a:hover{
+text-decoration: underline;
+
+}
+
+/* -----------------------HEADER ITMS END -------------------------------------*/
+/*----------------------- WRAPPER ITMS ---------------------------------------*/
+
+#content{
+margin-left: auto;
+margin-right: auto;
+clear: both;
+}
+
+#wrapper{
+margin-left: auto;
+margin-right: auto;
+width: 960px;
+}
+#mainGraphicLanding{
+margin-bottom:30px;
+float: left;
+width: 960px;
+height: 375px;
+background-image: url("../img/zum.jpg");
+}
+
+#savedInstrc{background-color: #9CC653;
+width:460px;
+float: left;
+}
+
+
+#recommendedInstrc{background-color: #9CC653;
+width:460px;
+float: right;
+}
+
+#infoTraineeInstruc span{
+/* margin-left:15px; */
+}
+
+.workSt{
+margin-top:25px;
+margin-left:25px;
+float: left;
+height:50px;
+width: 300px;
+}
+
+.insName{
+
+}
+
+#infoTraineeInstruc img{
+float: left;
+margin-left: 20px;
+}
+#infoTraineeInstruc li{
+background-color: white;
+height:133px; 
+border-bottom:20px solid #9CC653; 
+float: left;
+clear: both;
+width:460px;
+}
+
+
+
+#infoTraineeInstruc li:hover{
+background-color: #BECCA3;
+}
+
+#mainSearch{
+width: 780px;
+float: left;
+margin-left:80px;
+margin-top:140px;
+}
+
+#searchForm{
+
+}
+
+#searchField{
+border: 1px solid black;
+-moz-border-radius: 2px;
+border-radius: 2px;
+width:400px;
+margin: 0px 0px 0px 38px;
+padding-left:50px;
+padding-top:30px;
+padding-bottom:25px;
+}
+
+#searchBtn{
+width:300px ;
+margin-top:20px;
+background-color:#EF9426;
+border: 1px solid #EF9426;
+-moz-border-radius: 3px;
+border-radius: 3px;
+padding-bottom: 20px;
+padding-top:10px;
+}
+
+
+
+/*---------------------- FOOTER ITEMS BEGIN---------------------------------- */
+
+/* FOOTER ITEMS Uses percent to keep things center when resized */
+#footer{
+height:57px ;
+background-color:#526794 ;
+float: left;
+width: 100%;
+margin-top:50px;
+
+}
+
+/* deals with how the fonts stay together */
+#ftHold{
+margin: 20px auto;
+width: 960px;
+}
+
+#ftLinks a{
+margin-right: 10px;
+text-decoration: none;
+}
+
+#ftLinks a:hover{
+text-decoration: underline;
+}
+#ftLinks{
+width: 100%;
+}
+
+#ftLinks a:last-child{
+margin-right:0px;
+}
+/*--------------------- FOOTER ITMS END------------------------------------------- */
+
+/*-------------------- CONTINULY USED ITMS BOXES ETC------------------------------ */
+
+.imgBl{
+display: block;
+}
+
+.txtBl{
+display: block;
+margin-left: 20px;
+}
+
+/*---------------------- FONTS BEGIN ----------------------------------------------*/
+
+
+@font-face{
+
+font-family:nevisC;
+src: url("../font/nevis.ttf");
+}
+
+.nevisInfoFt{
+font: 18pt nevisC;
+text-align: center;
+}
+.ftFont{
+font: 12pt Futura;
+letter-spacing:1px;
+color:white;
+margin-left:10px;
+}
+
+.ftStyles{
+font: 11pt futura;
+margin-left: 10px;
+}
+
+.ftWorkOut{
+font: bold 12pt helvetica;
+}
+
+.ftInstructorName{
+font: bold 12pt helvetica;
+}
+
+.ftnav{
+font:bold 12pt helvetica;
+color: white;
+letter-spacing:1px;
+}
+
+.ftSearchBtn{
+font: bold 34pt helvetica;
+}
+
+.ftSearch{
+font: 18pt helvetica;
+/*
+padding-left:50px;
+padding-top:10px;
+padding-bottom:10px;
+*/
+color:#A5A5A5;
+}

@@ -1,0 +1,269 @@
+* {
+margin: 0;
+padding: 0;
+outline: none;
+}
+
+body{background: url('../img/brillant.png');
+
+}
+/* -----------------------HEADER ITMS -------------------------------------*/
+#logo{
+display: block;
+float: left;
+margin-top:20px;
+margin-bottom:25px;
+}
+
+#head{
+width:960px;
+margin-left:220px;
+
+}
+
+#headerLanding{
+width:100%;
+float: left;
+background-color: #9CC653;
+}
+
+#nav{
+float:right;
+margin-top:30px;
+}
+
+#nav li{
+float: left;
+margin-left:70px;
+}
+
+#nav li a{
+text-decoration: none;
+margin-left:10px;
+}
+
+#nav li a:hover{
+text-decoration: underline;
+
+}
+
+/* -----------------------HEADER ITMS END -------------------------------------*/
+/*----------------------- WRAPPER ITMS ---------------------------------------*/
+
+#content{
+margin-left: auto;
+margin-right: auto;
+clear: both;
+}
+
+#wrapper{
+margin-left: auto;
+margin-right: auto;
+width: 960px;
+}
+#mainGraphicLanding{
+margin-bottom:30px;
+float: left;
+width: 100%;
+height: 375px;
+background-image: url("../img/zumv2.jpg");
+}
+
+#savedInstrc{background-color: #9CC653;
+width:460px;
+float: left;
+}
+
+
+#recommendedInstrc{background-color: #9CC653;
+width:460px;
+margin-right:20px;
+float: right;
+}
+.workSt{
+margin-top:15px;
+}
+
+.insName{
+margin-top:30px;
+}
+
+#infoTraineeInstruc img{
+float: left;
+margin-left: 20px;
+margin-top:25px;
+margin-right:20px;
+margin-bottom: 30px;
+}
+#infoTraineeInstruc li{
+background-color: white;
+border-bottom:20px solid #9CC653; 
+float: left;
+clear: both;
+width:460px;
+}
+
+
+#infoTraineeInstruc li:hover{
+background-color: #BECCA3;
+}
+
+#mainSearch{
+width: 780px;
+float: left;
+margin-left:300px;
+margin-top:135px;
+}
+
+
+#searchField{
+border: 1px solid black;
+-moz-border-radius: 2px;
+border-radius: 2px;
+width:380px;
+margin: 0px 15px 0px 10px;
+padding:20px 0px 15px 20px;
+}
+
+#searchBtn{
+width:300px ;
+margin-top:20px;
+background-color:#EF9426;
+border: 1px solid #EF9426;
+-moz-border-radius: 3px;
+border-radius: 3px;
+padding:0px 0px 10px;
+cursor: pointer;
+
+}
+
+#disclaim{background:url('../img/brillant.png');
+border:3px solid #9CC653;
+width:420px;
+min-height:50px;
+padding:5px;
+}
+
+#about{background:url('../img/brillant.png');
+border:3px solid #9CC653;
+width:420px;
+min-height:50px;
+padding:5px;
+}
+
+/*---------------------- FOOTER ITEMS BEGIN---------------------------------- */
+
+/* FOOTER ITEMS Uses percent to keep things center when resized */
+#footer{
+height:57px ;
+background-color:#526794 ;
+float: left;
+width: 100%;
+margin-top:50px;
+
+}
+
+/* deals with how the fonts stay together */
+#ftHold{
+margin-left:220px;
+width: 960px;
+}
+
+#ftLinks a{
+margin-right: 10px;
+text-decoration: none;
+}
+
+#ftLinks a:hover{
+text-decoration: underline;
+}
+#ftLinks{
+width: 100%;
+}
+
+#ftLinks a:last-child{
+margin-right:0px;
+}
+/*--------------------- FOOTER ITMS END------------------------------------------- */
+
+/*-------------------- CONTINULY USED ITMS BOXES ETC------------------------------ */
+
+.imgBl{
+display: block;
+
+}
+
+.txtBl{
+display: block;
+margin-left: 20px;
+}
+
+.hidd{
+display: none;
+}
+
+.liAnc{
+text-decoration: none;
+color: black;
+
+}
+
+/*---------------------- FONTS BEGIN ----------------------------------------------*/
+
+
+@font-face{
+
+font-family:nevisC;
+src: url("../font/nevis.ttf");
+}
+
+.nevisInfoFt{
+font: 18pt nevisC;
+text-align: center;
+line-height: 1.35em;
+
+
+}
+.ftFont{
+font: 12pt Futura;
+letter-spacing:1px;
+color:white;
+margin-left:10px;
+}
+
+.ftDis{
+font: 10pt futura;
+margin-left: 10px;
+}
+
+.ftStyles{
+font: 10pt futura;
+margin-left: 10px;
+}
+
+.ftWorkOut{
+font: bold 12pt helvetica;
+}
+
+.ftInstructorName{
+font: bold 12pt helvetica;
+}
+
+.ftnav{
+font:bold 12pt helvetica;
+color: white;
+letter-spacing:1px;
+}
+
+.ftSearchBtn{
+font: bold 34pt helvetica;
+}
+
+.ftSearch{
+font: 18pt helvetica;
+color:#A5A5A5;
+}
+
+.ftline{
+line-height: 1.35em;
+}

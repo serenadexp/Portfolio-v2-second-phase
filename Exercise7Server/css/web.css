@@ -1,0 +1,354 @@
+* {
+margin: 0;
+padding: 0;
+outline: none;
+}
+
+body{background: url('../img/brillant.png');
+
+}
+/* -----------------------HEADER ITMS -------------------------------------*/
+#logo{
+display: block;
+float: left;
+margin-top:10px;
+margin-bottom:18px;
+}
+
+#head{
+width:960px;
+margin-left: 220px;
+
+}
+
+
+#header{
+width:100%;
+float: left;
+background-color: #9CC653;
+margin-bottom:30px; 
+
+}
+
+
+
+/* -----------------------HEADER ITMS END -------------------------------------*/
+/*----------------------- WRAPPER ITMS ---------------------------------------*/
+
+#content{
+margin-left: auto;
+margin-right: auto;
+clear: both;
+}
+
+#wrapper{
+margin-left: auto;
+margin-right: auto;
+width: 960px;
+}
+#mainGraphic{
+margin-bottom:30px;
+float: left;
+width: 960px;
+height: 385px;
+background-image: url("../img/running.jpg")
+}
+
+
+#signUp{
+float: right;
+height:385px; 
+width:300px;
+}
+
+#signUp a{
+text-decoration: none;
+}
+
+#signUp a:hover{
+text-decoration: underline;
+}
+
+#signUpUser{
+border: 1px solid black;
+-moz-border-radius: 2px;
+border-radius: 2px;
+padding:8px 50px 10px 5px;
+width:260px; 
+float: left;
+margin-left:20px;
+}
+
+#signUpBtn{
+background-color: #EF9426;
+border:1px solid #EF9426;
+-moz-border-radius: 2px;
+border-radius: 2px;
+padding: 10px 50px; 
+float: left;
+margin-left:20px;
+width:260px; 
+margin-bottom: 15px;
+}
+
+#signUpPass{
+border: 1px solid black;
+-moz-border-radius: 2px;
+border-radius: 2px;
+padding:8px 50px 10px 5px;
+width:260px; 
+float: left;
+margin:20px 20px; 
+}
+
+#loginUser{
+border: 1px solid black;
+-moz-border-radius: 2px;
+border-radius: 2px;
+padding:8px 50px 10px 5px;
+width:260px; 
+float: left;
+margin-left:20px;
+}
+
+#loginBtn{
+background-color: #EF9426;
+border:1px solid #EF9426;
+-moz-border-radius: 2px;
+border-radius: 2px;
+padding: 10px 50px; 
+float: left;
+margin-left:20px;
+width:260px; 
+margin-bottom: 15px;
+}
+
+#loginPass{
+border: 1px solid black;
+-moz-border-radius: 2px;
+border-radius: 2px;
+padding:8px 50px 10px 5px;
+width:260px; 
+float: left;
+margin:20px 20px; 
+}
+
+
+#actIcon{
+margin-left: 20px;
+margin-top: 60px;
+}
+
+#signUptxt{
+margin-bottom:30px;
+}
+
+#log{
+clear: both;
+margin-left:50px;
+text-align: center;
+}
+#instruc{
+clear: both;
+text-align: center;
+margin-left:40px; 
+}
+#blades{clear: both;
+float: left;
+}
+#arr{
+margin-top: 30px;
+margin-left: 125px;
+}
+#video{
+float: right;
+width: 460px;
+}
+
+
+#disclaim{background:url('../img/brillant.png');
+border:3px solid #9CC653;
+width:420px;
+min-height:50px;
+padding:5px;
+}
+
+
+#about{background:url('../img/brillant.png');
+border:3px solid #9CC653;
+width:420px;
+min-height:50px;
+padding:5px;
+}
+
+
+#reg{background:url('../img/brillant.png');
+border:3px solid #9CC653;
+width:780px;
+min-height:50px;
+padding:5px;
+}
+
+#insSignUpBtn{
+background-color: #EF9426;
+border:1px solid #EF9426;
+-moz-border-radius: 2px;
+border-radius: 2px;
+padding: 10px 50px; 
+float: left;
+margin-left:20px;
+width:260px; 
+margin-bottom: 15px;
+}
+
+#insSignUpPass{
+border: 1px solid black;
+-moz-border-radius: 2px;
+border-radius: 2px;
+padding:8px 50px 10px 5px;
+width:260px; 
+float: left;
+margin:20px 20px; 
+}
+
+#insSignUpUser{
+border: 1px solid black;
+-moz-border-radius: 2px;
+border-radius: 2px;
+padding:8px 50px 10px 5px;
+width:260px; 
+float: left;
+margin-left:20px;
+}
+
+#slices{
+float: left;
+margin-left:20px;
+margin-bottom: 50px;
+}
+
+#regis{
+float: right;
+width:300px;
+margin-right:20px;
+margin-top: 70px;
+}
+
+#insHead{
+margin-bottom:20px;
+}
+
+#insHead img{
+margin-right:50px;
+}
+
+
+
+
+/*---------------------- FOOTER ITEMS BEGIN---------------------------------- */
+
+/* FOOTER ITEMS Uses percent to keep things center when resized */
+#footer{
+height:57px ;
+background-color:#526794 ;
+float: left;
+width: 100%;
+margin-top:50px;
+
+}
+
+/* deals with how the fonts stay together */
+#ftHold{
+margin-left:220px;
+width: 960px;
+}
+
+#ftLinks a{
+margin-right: 10px;
+text-decoration: none;
+}
+
+#ftLinks a:hover{
+text-decoration: underline;
+}
+#ftLinks{
+width: 100%;
+}
+
+#ftLinks a:last-child{
+margin-right:0px;
+}
+/*--------------------- FOOTER ITMS END------------------------------------------- */
+
+/*-------------------- CONTINULY USED ITMS BOXES ETC------------------------------ */
+
+.imgBl{
+display: block;
+}
+
+.hidd{
+display: none;
+}
+
+/*---------------------- FONTS BEGIN ----------------------------------------------*/
+
+
+@font-face{
+
+font-family:nevisC;
+src: url("../font/nevis.ttf");
+}
+
+
+.nevisInfoFt{
+font: 18pt nevisC;
+text-align: center;
+}
+
+.nevisTitleFt{
+font: 18pt nevisC;
+}
+
+.nevisFt{
+font:bold 32pt nevisC;
+}
+
+.ftDis{
+font: 10pt futura;
+margin-left: 10px;
+}
+
+.ftFont{
+font: 12pt Futura;
+letter-spacing:1px;
+color:white;
+margin-left:10px;
+}
+
+.ftsignup{
+font: 11pt helvetica;
+color: #808080;
+}
+
+.ftsignupanchor{
+font: 13pt helvetica;
+color:black;
+}
+
+.ftSignUpBtn{
+font:bold 20pt helvetica;
+color: white;
+}
+
+.ftInsSignUp{
+font:bold 12pt helvetica;
+}
+
+.ftTextPara{
+font: 12pt helvetica;
+
+}
+
+.ftline{
+line-height: 1.35em;
+}

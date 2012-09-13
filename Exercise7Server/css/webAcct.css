@@ -1,0 +1,338 @@
+* {
+margin: 0;
+padding: 0;
+outline: none;
+}
+
+body{background: url('../img/brillant.png');
+
+}
+/* -----------------------HEADER ITMS -------------------------------------*/
+#logo{
+display: block;
+float: left;
+margin-top:20px;
+margin-bottom:25px;
+}
+
+#head{
+width:960px;
+margin-left:220px;
+
+}
+
+#headerLanding{
+width:100%;
+float: left;
+background-color: #9CC653;
+margin-bottom:30px; 
+
+}
+
+#nav{
+float:right;
+margin-top:30px;
+}
+
+#nav li{
+float: left;
+margin-left:70px;
+}
+
+#nav li a{
+text-decoration: none;
+margin-left:10px;
+}
+
+#nav li a:hover{
+text-decoration: underline;
+
+}
+
+/* -----------------------HEADER ITMS END -------------------------------------*/
+/*----------------------- WRAPPER ITMS ---------------------------------------*/
+
+#content{
+margin-left: auto;
+margin-right: auto;
+clear: both;
+}
+
+#wrapper{
+margin-left: auto;
+margin-right: auto;
+width: 960px;
+}
+
+#avatarHolder{
+width: 230px;
+margin-left:90px;
+float: left;
+}
+
+#acctName{
+text-align: center;
+}
+
+#avatarChange{
+margin-left:100px;
+text-decoration:none;
+color:black;
+background-color: #EF9426;
+padding:10px 5px 10px 5px;
+border: none;
+}
+
+
+#editHolder{
+width: 380px;
+margin-right: 180px;
+float: right;
+
+}
+
+#editHolder a{
+text-decoration: none;
+color: black;
+
+}
+
+#editHolder a:hover{
+text-decoration: underline;
+}
+
+#editUserInfoTxt{
+background-color: #EF9426;
+float: left;
+width: inherit;
+border-right: 20px solid #EF9426;
+border-left: 20px solid #EF9426;
+border-bottom: 20px solid #EF9426;
+}
+
+#editUserInfoZip{
+background-color: #EF9426;
+float: left;
+width: inherit;
+border-right: 20px solid #EF9426;
+border-left: 20px solid #EF9426;
+border-bottom: 20px solid #EF9426;
+}
+
+#editUserInfoSaved{
+background-color: #EF9426;
+float: left;
+width: inherit;
+margin-top:30px;
+border-right: 20px solid #EF9426;
+border-left: 20px solid #EF9426;
+border-bottom: 20px solid #EF9426;
+}
+
+
+#linkHolder{
+margin-top: 30px;
+float: left;
+width:420px;
+background-color:#EF9426;
+}
+
+#urlLinkForm{
+margin-left: 20px;
+padding:10px 0px;
+}
+#addBtn{
+padding: 3px;
+}
+
+#urlType{
+height:30px;
+}
+
+#urlLink{
+height:30px;
+width: 190px;
+}
+#spanExample{
+margin-left: 65px;
+}
+
+#addLinkTitle{
+width: 300px;
+margin-left: 30px;
+}
+
+.editTitle{
+margin-top:30px;
+margin-bottom:10px;
+margin-left:10px;
+float: left;
+}
+
+.editTxt{
+float: right;
+margin-top: 5px;
+margin-right:10px;
+}
+
+.styleInfo{
+background-color:white;
+float: left;
+width: inherit;
+padding:15px 0px 15px;
+}
+
+.workSt{
+margin-top:15px;
+}
+
+.insName{
+margin-top:30px;
+}
+
+#saveIn img{
+float: left;
+margin-left: 20px;
+margin-top:25px;
+margin-right:20px;
+}
+#saveIn li:first-child{
+border:none;
+}
+
+#saveIn li{
+background-color: white;
+height:133px; 
+border-top:20px solid #EF9426; 
+float: left;
+clear: both;
+width:inherit;
+}
+#saveIn{
+background-color: #EF9426;
+border: none;
+}
+
+#disclaim{background:url('../img/brillant.png');
+border:3px solid #9CC653;
+width:420px;
+min-height:50px;
+padding:5px;
+}
+
+#about{background:url('../img/brillant.png');
+border:3px solid #9CC653;
+width:420px;
+min-height:50px;
+padding:5px;
+}
+
+
+
+/*---------------------- FOOTER ITEMS BEGIN---------------------------------- */
+
+/* FOOTER ITEMS Uses percent to keep things center when resized */
+#footer{
+height:57px ;
+background-color:#526794 ;
+float: left;
+width: 100%;
+margin-top:50px;
+
+}
+
+/* deals with how the fonts stay together */
+#ftHold{
+margin-left:220px;
+width: 960px;
+}
+
+#ftLinks a{
+margin-right: 10px;
+text-decoration: none;
+}
+
+#ftLinks a:hover{
+text-decoration: underline;
+}
+#ftLinks{
+width: 100%;
+}
+
+#ftLinks a:last-child{
+margin-right:0px;
+}
+/*--------------------- FOOTER ITMS END------------------------------------------- */
+
+/*-------------------- CONTINULY USED ITMS BOXES ETC------------------------------ */
+
+.imgBl{
+display: block;
+}
+
+.txtBl{
+display: block;
+margin-left: 20px;
+}
+
+.hidd{
+display: none;
+}
+/*---------------------- FONTS BEGIN ----------------------------------------------*/
+
+
+@font-face{
+
+font-family:nevisC;
+src: url("../font/nevis.ttf");
+}
+
+.nevisInfoFt{
+font: 18pt nevisC;
+text-align: center;
+}
+
+.ftDis{
+font: 10pt futura;
+margin-left: 10px;
+}
+
+.ftFont{
+font: 12pt Futura;
+letter-spacing:1px;
+color:white;
+margin-left:10px;
+}
+
+
+.ftWorkOut{
+font: bold 12pt helvetica;
+}
+
+.ftInstructorName{
+font: normal 12pt nevisC;
+}
+
+.ftnav{
+font:bold 12pt helvetica;
+color: white;
+letter-spacing:1px;
+}
+
+.ftEdit{
+font: normal 10pt futura;
+text-align: center;
+}
+
+.ftStyles{
+font: 10pt futura;
+margin-left: 10px;
+}
+
+.ftExample{
+font: bold 10px helvetica; 
+}
+
+.ftline{
+line-height: 1.35em;
+}
