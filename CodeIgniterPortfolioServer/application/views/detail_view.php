@@ -32,7 +32,7 @@
 	
 		<div id="wrapper">
 			<div id="header">
-				<div id="homeReturn"><h1 title="Andre Allen Web Developer and Designer" class="txtInd"><?php echo anchor('home','Andre Allen</br>Web Developer & Designer','class="anc nameFnt"')?></h1>
+				<div id="homeReturn"><h1 title="Andre Allen Web Developer and Designer" class="txtInd"><?php echo anchor('home','Andre Allen</br>Web Developer <span class="andColor">&</span> Designer','class="anc nameFnt"')?></h1>
 				</div><!-- closed homeReturn -->
 				<div id="navHolder"><div class="warnHide warnFnt" id="warn"><p>Please Fill Out All Fields</p></div><!-- closed warn -->
 					<ul id="nav">
@@ -59,7 +59,7 @@
 					$projectFinalFull=$infoDetails->final_Img_Full;
 					$projectFinalNames=$infoDetails->desc_Title;
 				?>
-						<li><a href="../../<?php echo $projectFinalFull;?>" rel="prettyPhoto[final]"><img class="imgBlock" src="../../<?php echo $projectFinal;?>" alt="<?php echo $projectFinalNames;?>"/></a></li>
+						<li class="picBorder"><a href="../../<?php echo $projectFinalFull;?>" rel="prettyPhoto[final]"><img class="imgBlock" src="../../<?php echo $projectFinal;?>" alt="<?php echo $projectFinalNames;?>"/></a></li>
 		
 				<?php endforeach;?>	
 						
@@ -100,7 +100,7 @@
 					$projectProdTitle=$infoDetails->desc_Title;
 					$projectProdFull=$infoDetails->prod_Img_Full;
 					?>
-						<li><a href="../../<?php echo $projectProdFull;?>" rel="prettyPhoto[production]"><img class="imgBlock" src="../../<?php echo $projectProd; ?>" alt="<?php echo $projectProdTitle; ?>"/></a></li>
+						<li class="picBorder"><a href="../../<?php echo $projectProdFull;?>" rel="prettyPhoto[production]"><img class="imgBlock" src="../../<?php echo $projectProd; ?>" alt="<?php echo $projectProdTitle; ?>"/></a></li>
 					<?php endforeach;?>	
 					</ul>
 				
@@ -110,7 +110,12 @@
 			<div id="footer">
 				<div id="footTop"></div><!-- closed footTop -->
 
-					<p title="Andre Allen Web Developer and Design" class="footFnt txtInd">Copyright &copy; Andre Allen 2012</p>
+					<p title="Andre Allen Web Developer and Design" class="footFnt txtInd">Copyright &copy; Andre Allen 2012
+					<a href="http://www.linkedin.com/pub/andre-allen/50/163/a52" title="Linkedin">
+					<img class="imgBlock linkIco" alt="linkedin" src="../../img/linkIcon.png"/></a>
+					<a href="https://github.com/serenadexp" title="GitHub">
+					<img class="imgBlock gitIco" alt="gitHub"  src="../../img/gitIcon.png"/></a>
+					</p>
 			</div><!-- closed footer -->	
 		</div><!-- closed wrapper -->
 		<script type="text/javascript" src="../../js/jquery-1.7.2.min.js"></script>

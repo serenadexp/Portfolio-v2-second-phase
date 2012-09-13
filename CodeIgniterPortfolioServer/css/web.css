@@ -196,6 +196,9 @@ padding-bottom: 12px;
 border-bottom: 12px solid #937EBF;
 }
 
+.andColor{
+color: #AB2B49;
+}
 
 /*_______________________ CONTENT INTRO ____________________ */
 #contentIntro{
@@ -345,10 +348,22 @@ clear: both;
 #footTop{
 border-top:5px solid #AFAEAE;
 opacity:.5;
+margin-bottom: 5px;
 }
 
 #footer p{
-margin-bottom:10px;
+margin-bottom:20px;
+}
+
+.gitIco{
+padding-top:4px;;
+float: right;
+}
+
+.linkIco{
+float: right;
+margin-left: 20px;
+margin-right:10px;
 }
 /*_______________________ FONTS __________________ */
 

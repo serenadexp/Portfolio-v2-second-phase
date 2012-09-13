@@ -32,7 +32,7 @@
 
 		<div id="wrapper">
 			<div id="header">
-				<div id="homeReturn"><p title="Andre Allen Web Developer and Designer" class="txtInd"><?php echo anchor('home','Andre Allen</br>Web Developer & Designer','class="anc nameFnt"')?></p>
+				<div id="homeReturn"><p title="Andre Allen Web Developer and Designer" class="txtInd"><?php echo anchor('home','Andre Allen</br>Web Developer <span class="andColor">&</span> Designer','class="anc nameFnt"')?></p>
 				</div><!-- closed homeReturn -->
 				<div id="navHolder"><div class="warnHide warnFnt" id="warn"><p>Please Fill Out All Fields</p></div><!-- closed warn -->
 					<ul id="nav">
@@ -123,7 +123,12 @@ Code Igniter framework and OOP.</p>
 			<div id="footer">
 				<div id="footTop"></div><!-- closed footTop -->
 
-					<p title="Andre Allen Web Developer and Design" class="footFnt txtInd">Copyright &copy; Andre Allen 2012</p>
+					<p title="Andre Allen Web Developer and Design" class="footFnt txtInd">Copyright &copy; Andre Allen 2012
+					<a href="http://www.linkedin.com/pub/andre-allen/50/163/a52" title="Linkedin">
+					<img class="imgBlock linkIco" alt="linkedin" src="img/linkIcon.png"/></a>
+					<a href="https://github.com/serenadexp" title="GitHub">
+					<img class="imgBlock gitIco" alt="gitHub"  src="img/gitIcon.png"/></a>
+					</p>
 			</div><!-- closed footer -->	
 		</div><!-- closed wrapper -->
 	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>

@@ -34,7 +34,7 @@
 		<div id="wrapper">
 		
 			<div id="header">
-				<div id="homeReturn"><p class="txtInd"><?php echo anchor('home','Andre Allen<br />Web Developer & Designer','class="anc nameFnt"')?></p>
+				<div id="homeReturn"><p class="txtInd"><?php echo anchor('home','Andre Allen<br />Web Developer <span class="andColor">&</span> Designer','class="anc nameFnt"')?></p>
 				
 				</div><!-- closed homeReturn -->
 				<div id="navHolder"><div class="warnHide warnFnt" id="warn"><p>Please Fill Out All Fields</p></div><!-- closed warn -->
@@ -53,17 +53,17 @@
 				<div id="wowslider-container1">
 					<div class="ws_images">
 						<ul>
-							<li><img src="img/exercise.jpg" alt="Exercise 7" title="Exercise 7" id="wows1_0"/></li>
-							<li><img src="img/look.jpg" alt="Logos" title="Looker" id="wows1_1"/></li>
-							<li><img src="img/afro.jpg" alt="Looker" title="Logos" id="wows1_2"/></li>
-							<li><img src="img/cas.jpg" alt="CAS" title="CAS" id="wows1_3"/></li>
+							<li><a href="/details/index/1" title="Exercise 7"><img src="img/exercise.jpg" alt="Exercise 7" title="Exercise 7" id="wows1_0"/></a></li>
+							<li><a href="/details/index/2" title="Looker"><img src="img/look.jpg" alt="Looker" title="Looker" id="wows1_1"/></a></li>
+							<li><a href="/details/index/3" title="Logo Designs"><img src="img/afro.jpg" alt="Logo Designs" title="Logo Designs" id="wows1_2"/></a></li>
+							<li><a href="/details/index/4" title="CAS"><img src="img/cas.jpg" alt="CAS" title="CAS" id="wows1_3"/></a></li>
 						</ul>
 					</div>
 				<div class="ws_bullets">
 				<div>
 				<a href="#" title="Exercise 7"><img src="data1/tooltips/exercise.jpg" alt="Exercise 7"/>1</a>
-				<a href="#" title="Loooker"><img src="data1/tooltips/look.jpg" alt="Logos"/>2</a>
-				<a href="#" title="Logos"><img src="data1/tooltips/afro.jpg" alt="Looker"/>3</a>
+				<a href="#" title="Looker"><img src="data1/tooltips/look.jpg" alt="Looker"/>2</a>
+				<a href="#" title="Logo Designs"><img src="data1/tooltips/afro.jpg" alt="Logo Designs"/>3</a>
 				<a href="#" title="CAS"><img src="data1/tooltips/cas.jpg" alt="CAS"/>4</a>
 				</div>
 				</div>
@@ -143,7 +143,12 @@
 			<div id="footer">
 				<div id="footTop"></div><!-- closed footTop -->
 
-					<p class="footFnt txtInd">Copyright &copy; Andre Allen 2012</p>
+					<p class="footFnt txtInd">Copyright &copy; Andre Allen 2012 
+					<a href="http://www.linkedin.com/pub/andre-allen/50/163/a52" title="Linkedin">
+					<img class="imgBlock linkIco" alt="linkedin" src="img/linkIcon.png"/></a>
+					<a href="https://github.com/serenadexp" title="GitHub">
+					<img class="imgBlock gitIco" alt="gitHub"  src="img/gitIcon.png"/></a>
+					</p>	
 			</div><!-- closed footer -->	
 		</div><!-- closed wrapper -->
 	<script type="text/javascript" src="engine1/wowslider.js"></script>
